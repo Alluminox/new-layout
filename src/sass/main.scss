@@ -1,0 +1,30 @@
+@import './abstract/var';
+@import './abstract/functions';
+@import './abstract/mixins';
+@import './abstract/placeholders';
+
+@import './base/reset';
+@import './base/typograph';
+@import './base/container';
+@import './base/typograph';
+
+@import './components/header';
+@import './components/list';
+@import './components/search';
+@import './components/aside';
+@import './components/btn';
+@import './components/social-list';
+
+@import './layout/session-banner';
+@import './layout/session-attributes';
+@import './layout/session-about';
+@import './layout/session-projects';
+@import './layout/session-gallery';
+
+@import './layout/session-providers';
+@import './layout/session-newsletter';
+@import './layout/session-gallery';
+@import './layout/footer';
+
+
+@import './pages/index';

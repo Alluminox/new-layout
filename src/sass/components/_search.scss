@@ -1,0 +1,26 @@
+.search {
+    display: block;
+}
+
+.search input {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    width: 20rem;
+    padding: .5rem 1rem;
+    transition: .2s;
+    border-radius: 4rem;
+    // color: #4e4e4e;
+    color: #fff;
+    background: transparent;
+    border: 1px solid rgb(47, 47, 47);
+
+}
+.search input:active,
+.search input:focus {
+    width: 30rem;
+}
+
+.search input::placeholder {
+    // color: #302f2f;
+    color: rgba(255, 255, 255, 0.699);
+}

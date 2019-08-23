@@ -1,0 +1,22 @@
+{
+  "name": "projeto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run sass:watch\" \"npm run lite:server\" ",
+    "lite:server": "lite-server -c bs-config.json",
+    "sass:watch": "node-sass src/sass/main.scss src/css/style.min.css --watch --output-style=compressed",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.5.3"
+  },
+  "dependencies": {
+    "concurrently": "^4.1.1",
+    "node-sass": "^4.12.0"
+  }
+}

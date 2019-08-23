@@ -1,0 +1,90 @@
+
+/* Banner */
+.banner {
+    width: 100%;
+    height: 97vh;
+    background-color: $white;
+    background: 
+    linear-gradient(to right bottom , rgba($black,0.2), rgba($black,0.2)), 
+    url('https://images.pexels.com/photos/1643799/pexels-photo-1643799.jpeg?cs=srgb&dl=exposure-night-sky-night-view-1643799.jpg&fm=jpg');
+
+    background-color: rgb(8, 8, 8);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    // background-repeat: no-repeat;
+    // background-position: center center;
+    // background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 500;
+    position: relative;
+    // clip-path: polygon(0 0, 100% 0, 100% 87%, 50% 100%, 0 87%);
+
+    // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%); 
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
+    clip-path: polygon(100% 0, 100% 71%, 64% 94%, 25% 86%, 0 100%, 0 0);
+    
+
+    // box-shadow: 1rem 5rem 3rem #000;
+
+
+}
+
+
+
+
+.banner__content {
+    /* background-color: red; */
+    text-align: center;
+    // background-color: #fff;
+    // width: 50%;
+
+    transform: translateY(-5rem);
+}
+
+.banner__intro {
+    font-size: 1.2rem;
+    word-spacing: .5rem;
+    letter-spacing: .1rem;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 5  00;
+    margin-bottom: 2rem;
+    // background-color: #fff;
+}
+
+.banner__subtitle {
+    font-size: 3.8rem;
+    font-weight: 300;
+    margin-top: -1.57rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.banner__title {
+    // background-color: red;
+    font-size: 4.5rem;
+    color: $white;
+    letter-spacing: 2px;
+    font-weight: 300;
+    // text-transform: uppercase;
+}
+
+
+
+.banner__paragraph {
+    font-size: 1.35rem;
+    // letter-spacing: 2px;
+    color: $white;
+    margin-bottom: .25em;
+    font-weight: 300;
+
+}
+
+.banner__btn {
+    margin-top: 3rem;
+}
+.banner__btn:not(:last-child) {
+    margin-right: 1rem; 
+}

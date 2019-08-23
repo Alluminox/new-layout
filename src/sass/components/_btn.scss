@@ -1,0 +1,125 @@
+.btn {
+    font-size: 1.48rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 0;
+    padding: 2.25rem 4rem; 
+    transition: all .2s;
+    display: inline-block;
+    font-family: 'Titillium Web', sans-serif;
+    border: 1px solid var(--bg);
+    cursor: pointer;
+    color: var(--color, #{$white});
+    background-color: var(--bg, #{transparent});
+
+
+
+    &--outline {
+
+        &:hover {
+            border-color: var(--bg);
+            color: var(--bg);
+            background-color: var(--color);
+        }
+    }
+
+
+    &--md {
+        padding: 2rem;  
+        font-size: 1.28rem;
+    }
+
+
+    &--block  {
+        width: 100%;
+        display: block;
+    }
+
+    &--circle {
+        border-radius: 25rem;
+    }
+
+    &--white {
+        font-weight: 600;
+        --color: #000;
+        --bg: #{$white};
+        
+        border-radius: 25rem;
+    }
+
+    &--blue {
+        --color: #{$white};
+        --bg: #3f7bb7;
+    }
+
+    
+    &--blue-dark {
+        --color: #{$white};
+        --bg: #334458;  
+        border: 1px solid #334458;
+    }
+
+    
+    &--yellow {
+        --color: #{$white};
+        --bg: #f5b64c;
+    }
+
+    &--border {
+        border: 1px solid $white;
+    
+    }
+
+    &--purple {
+        --color: #{$white};
+        --bg: #7928ff;
+
+        // #334458
+
+    }
+
+    &--purple-light {
+        --color: #{$white};
+        --bg: #9564e4;
+
+        // #334458
+
+    }
+
+
+}
+
+
+.btn-login {
+    padding: .85rem 1rem;
+    font-weight: 500;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    margin-left: 2.5rem;
+    background-color: transparent;
+    border: 1px solid rgb(47, 47, 47);
+    color: #fff;
+    // background-color: rgb(255, 255, 255);
+    // color: #333232;
+
+    // #e69e49
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-family: 'Titillium Web', sans-serif;
+
+    i {
+        margin-left: 1rem;
+        font-size: 1.6rem;
+    }
+
+}
+
+
+.mobile-btn {
+    margin-left: 4rem;
+    // color: #333232;
+    color: #fff;
+}

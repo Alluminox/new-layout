@@ -1,0 +1,37 @@
+.header {
+    // min-height: 8rem;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    padding: 1rem 0;
+    background-color: rgba(0,0,0,1);
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // right: 0;
+    z-index: 900;
+
+    
+}
+
+.header__content {
+    display: flex;
+    align-items: center;    
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    display: block;
+    font-size: 3rem;
+    // color: #302f2f;
+    color: #fff;
+    /* font-family: 'Indie Flower', cursive; */
+    text-decoration: none;
+}
+.header__item-right {
+    margin-left: auto;
+}

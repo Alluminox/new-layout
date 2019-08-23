@@ -1,0 +1,40 @@
+
+.list {
+    flex: 1;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav .list {
+    list-style: none;
+    display: flex;
+    list-style: none;
+
+    flex-direction: column;
+}
+
+
+.list .list__item {
+    font-size: 1rem;
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.list .list__item:hover {
+    background-color: #fff;
+    
+}
+
+.list .list__item:hover .list__link {
+    color: #000;
+    font-weight: 400;
+}
+
+.list .list__item .list__link {
+    font-size: 1.45rem;
+    font-weight: 400;
+    color: #302f2f;
+}

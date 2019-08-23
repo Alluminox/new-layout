@@ -1,0 +1,40 @@
+.layout--mobile {
+    transition: all .2s;
+}
+.layout--mobile .layout__content {
+    width: calc(100%);
+    transition: all .2s;
+}
+
+
+.layout--mobile .layout__aside {
+    position: fixed;   
+    transform: translateX(32.5rem);
+    box-shadow: none;
+}
+
+.layout {
+    display: flex;
+
+    &__content {
+        width: calc(100% -  32.5rem);
+        height: 100%;
+        position: relative;
+    }
+
+    &__content.mobile {
+ 
+    }
+
+    &__aside{
+        display: flex;
+        flex-direction: column;
+        // position: relative;
+        // order: 2;
+        z-index: 9999;
+        transition: all .2s;
+        box-shadow: -1rem 0 1rem 0 rgba(0,0,0,0.1),
+        0 0 4rem 0 rgba(0,0,0,0.1);
+
+    }
+}
