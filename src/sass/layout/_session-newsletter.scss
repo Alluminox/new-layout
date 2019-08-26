@@ -1,7 +1,7 @@
 .newsletter {
     // margin-top: -10rem;
     background-color: #1b1e22;
-    padding: 10rem 0 4rem 0;
+    padding: 10rem 0 2rem 0;
     position: relative;
     bottom: 0;
     z-index: 50;
@@ -9,7 +9,7 @@
 
     // clip-path: polygon(50% 18%, 100% 0, 100% 100%, 50% 82%, 0 100%, 0 0);
     clip-path: polygon(51% 18%, 100% 0, 100% 100%, 0 100%, 0 0);
-    border-bottom: 1px solid #0f1010;
+    // border-bottom: 1px solid #0f1010;
     // &:after {
     //     content: '';
     //     background-color: red;
@@ -86,8 +86,8 @@
 
         margin: 0 auto;
         // padding: 1rem;
-        background-color: red;
-        height: 3.65rem;
+        // background-color: red;
+        height: 4rem;
         border-radius: 4px;
         display: flex;
         justify-content: stretch;
@@ -101,7 +101,8 @@
         position: relative;
         border: none;
         font-size: 1.5rem;
-        background-color: #fff;
+        background-color: #151617;
+        border-right: 2px solid #191b1f;
         padding: 0 1rem;
         display: block;
         
@@ -115,7 +116,7 @@
         font-weight: 500;
         letter-spacing: 1px;
         color: #fff;
-        background-color: #3e43b1;
+        background-color: #151617;
     }
 }
 

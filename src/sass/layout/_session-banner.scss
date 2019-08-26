@@ -2,7 +2,9 @@
 /* Banner */
 .banner {
     width: 100%;
-    height: 97vh;
+    // height: 97vh;
+
+    height: 100vh;
     background-color: $white;
     background: 
     linear-gradient(to right bottom , rgba($black,0.2), rgba($black,0.2)), 
@@ -22,12 +24,32 @@
     // clip-path: polygon(0 0, 100% 0, 100% 87%, 50% 100%, 0 87%);
 
     // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%); 
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
-    clip-path: polygon(100% 0, 100% 71%, 64% 94%, 25% 86%, 0 100%, 0 0);
+    // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
+    // clip-path: polygon(100% 0, 100% 71%, 64% 94%, 25% 86%, 0 100%, 0 0);
     
 
     // box-shadow: 1rem 5rem 3rem #000;
 
+&:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    content: '';
+
+    background-image: 
+    linear-gradient(to right bottom , rgba($black,0.2), rgba($black,0.4)), 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");;
+    z-index: 401;
+}
+
+    &__view {   
+        z-index: 40;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
 }
 
@@ -40,7 +62,10 @@
     // background-color: #fff;
     // width: 50%;
 
-    transform: translateY(-5rem);
+    position: relative;
+    z-index: 501;
+
+    // transform: translateY(-5rem);
 }
 
 .banner__intro {

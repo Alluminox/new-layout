@@ -51,11 +51,18 @@
     li {
         padding: 1rem;
         display: block;
-
+        transition: all .2s;
         a {
+            display: flex;
+            align-items: center;
             font-size: 1.2rem;
             color: #fff;
+        }
 
+        &:hover,
+        &:active,
+        &:link {
+            transform: translate(-6px, -4px);
         }
     }
 
