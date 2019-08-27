@@ -17,9 +17,14 @@
 
         // clip-path: polygon(50% 0, 100% 8%, 99% 92%, 50% 100%, 0 92%, 0 8%);
         // clip-path: polygon(50% 0, 100% 14%, 99% 92%, 12% 100%, 0 73%, 0 15%);
-        clip-path: polygon(50% 0, 100% 14%, 99% 92%, 12% 100%, 0 100%, 0 15%);
+     
         position: absolute;
         top: 0;
+
+        @media(min-width: #{$mq-tablet}) {
+
+            clip-path: polygon(50% 0, 100% 14%, 99% 92%, 12% 100%, 0 100%, 0 15%);
+        }
 
     }
 }
@@ -31,13 +36,18 @@
     justify-content: center;
     flex-wrap: wrap;
     position: relative;
-    padding: 25rem 0 20rem;
+
     z-index: 9999;
 
     text-align: center;
 
     width: 100%; 
     max-width: 100%;
+    padding: 25rem 0  4rem 0;
+    @media(min-width: #{$mq-tablet}) {
+
+        padding: 25rem 0 20rem;
+    }
 
 
 }
@@ -48,7 +58,11 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    padding: 0 2rem;
+    @media(min-width: #{$mq-tablet}) {
 
+        padding: 0;
+    }
 }
 
 
@@ -62,8 +76,12 @@
     cursor: pointer;
 
     background-color: tomato;
-    margin-right: 1rem;
     margin-bottom: 1rem;
+
+
+    @media(min-width: #{$mq-tablet}) {
+        margin-right: 1rem;
+    }
 }
 
 .product__image {

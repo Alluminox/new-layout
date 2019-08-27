@@ -11,7 +11,43 @@
 }
 
 
+.title {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 2rem;
+    margin-bottom: 4rem;
+    
+    @media(min-width: #{$mq-tablet}) { 
+        max-width: 80rem;
+        margin-bottom: 7rem;
+    }
 
-.mt-md {
-    margin-top: 4rem;
+    &--dark {
+
+        .title__primary { color: $white; }
+        .title__secondary { color: $white; }
+    }
+
+
+    &__primary { 
+        font-size: 3.2rem;
+        margin-bottom: 2.5rem;
+        color: #3d597a;
+
+    }   
+
+    &__secondary {
+        font-size: 1.35rem;
+        font-weight: 500;
+        line-height: 1.9;
+        color: #3d597a;
+
+        text-align: justify;
+        @media(min-width: 768px) { 
+            text-align: center;
+        }
+        
+    }
 }

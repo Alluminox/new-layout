@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Site Layout!</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Titillium+Web:300,400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <!--  -->
+    <div class="layout  layout--mobile">
+            <aside class="aside layout__aside">
+                <span class="aside__header">Consulte o Guia</span>
+                <ul class="list">
+                    <li class="list__item"><a href="#" class="list__link"><i class="fas fa-home"></i> Página Inicial</a></li>
+                    <li class="list__item"><a href="#" class="list__link"><i class="fas fa-images"></i>Produtos</a></li>
+                    <li class="list__item"><a href="#" class="list__link"><i class="fas fa-tasks"></i>Projeto</a></li>
+                    <li class="list__item"><a href="#" class="list__link"><i class="fas fa-hands-helping"></i>Trabalhe Conosco</a></li>
+                    <li class="list__item"><a href="#" class="list__link"><i class="fas fa-pencil-ruler"></i>Faça um Orçamento</a></li>
+                    <li class="list__item"><a href="#" class="list__link"><i class="fas fa-question"></i>Sobre</a></li>
+                    <li class="list__item"><a href="#" class="list__link"><i class="fas fa-phone-alt"></i>Contato</a></li>
+                </ul>
+
+                <div class="social">
+                    <span class="social__title">Siga-nos na redes sociais</span>
+
+                    <a class="social__item social__item--facebook">
+                        <i class=" social__item-icon fab fa-facebook-f"></i>
+                    </a>
+
+                    <a class="social__item social__item--google">
+                            <i class=" social__item-icon fab fa-google"></i>
+                    </a>
+
+                    <a class="social__item social__item--twitter">
+                        <i class=" social__item-icon fab fa-twitter"></i>
+                    </a>
+                </div>
+            </aside>    
+
+            <main class="layout__content">
+                <header class="header">
+                    <div class="container">
+                        <a href="#" class="header__logo">
+                            <img src="images/logo.png" alt="Logo da Alluminox">
+                        </a>
+                        <div class="header__content header__item-right">
+                            
+                            <form action="#" class="search">
+                                <input type="text" placeholder="Pesquisa">
+                                <button type="submit">
+                                        <i class="fas fa-search"></i>
+                                </button>
+                            </form>
+
+                            <button class="btn-login">Minha Conta<i class="fas fa-lock"></i>
+                            </button>
+                            <a href="#" class="mobile-btn">
+                                <i class="fas fa-bars"></i>
+                            </a>
+ 
+                        </div>
+                    </div>
+            
+                </header>
+                
+                <section class="banner">
+
+                    <video class="banner__view" autoplay loop >
+                        <source src="videos/city-night.mp4" type="video/mp4">
+                    </video>
+                    <div class="banner__content">
+                        <span class="banner__intro">Oportunidade Alluminox para profissionais!</span>
+                        <h1 class="banner__title">Sessão, Trabalhe Conosco</h1>
+                        <h2 class="banner__subtitle">Envie-nos seus dados</h2>
+                        <p class="banner__paragraph">Somos uma empresa séria a mais de 40 anos no mercado, estamos buscando profissionais qualificados!</p>
+                        <p class="banner__paragraph">Preencha todos os os campos para se canditar à uma vaga</p>
+            
+                        <a href="#" class="banner__btn btn btn--white ">Começar Agora</a>
+                    
+        
+                    </div>
+                </section>
+
+
+                <section class="form">
+
+                    <div class="container">
+                        
+                        <form action="#" class="forms">
+                            <div class="data">
+                                    <label for="" class="data__label">Nome Completo</label>
+                                    <input type="text" class="data__input --error" placeholder="Digite seu nome">
+                                    <!-- <span class="message message--error">This is a Danger Message</span> -->
+                                </div>
+
+                                 <div class="data">
+                                    <label for="" class="data__label">Idade</label>
+                                    <input type="text" class="data__input --warning" placeholder="Digite sua idade">
+                                    <!-- <span class="message message--warning">This is a Warning Message</span> -->
+                                </div>
+        
+
+                                <div class="data">
+                                    <label for="" class="data__label">Sexo?</label>
+                                    <select name="" id=""  class="data__input ">
+                                        <option value="">Masculino</option>
+                                        <option value="">Faminino</option>
+                                    </select>
+                                    <!-- <span class="message message--success">This is a Success Message</span> -->
+                                </div>
+
+                                <div class="data">
+                                    <label for="" class="data__label">Estado Civil</label>
+                                    <select name="" id=""  class="data__input ">
+                                        <option value="">Solteiro</option>
+                                        <option value="">Casado</option>
+                                        <option value="">Divorciado</option>
+                                    </select>
+                                    <!-- <span class="message message--success">This is a Success Message</span> -->
+                                </div>
+
+
+                                <div class="data">
+                                    <label for="" class="data__label">Possui Filhos?</label>
+                                    <select name="" id=""  class="data__input ">
+                                        <option value="">Não</option>
+                                        <option value="">Sim, 1</option>
+                                        <option value="">Sim, 2</option>
+                                        <option value="">Sim, mais de 3</option>
+                                    </select>
+                                    <!-- <span class="message message--success">This is a Success Message</span> -->
+                                </div>
+
+
+                                <div class="data">
+                                    <label for="" class="data__label">Digite seu CEP</label>
+                                    <input type="text" class="data__input " placeholder="Digite seu e-mail">
+                                    <!-- <span class="message message--success">This is a Success Message</span> -->
+                                </div>
+        
+                
+                                <div class="data">
+                                    <label for="" class="data__label">Digite seu e-mail</label>
+                                    <input type="text" class="data__input " placeholder="Digite seu e-mail">
+                                    <!-- <span class="message message--success">This is a Success Message</span> -->
+                                </div>
+
+                                <div class="data">
+                                    <label for="" class="data__label">Telefone 1</label>
+                                    <input type="text" class="data__input " placeholder="Digite seu e-mail">
+                                    <!-- <span class="message message--success">This is a Success Message</span> -->
+                                </div>
+
+                                <div class="data">
+                                    <label for="" class="data__label">Telefone 2</label>
+                                    <input type="text" class="data__input " placeholder="Digite seu e-mail">
+                                    <!-- <span class="message message--success">This is a Success Message</span> -->
+                                </div>
+            
+                                <div class="data">
+                                    <label for="" class="data__label">E-mail</label>
+                                    <input type="text" class="data__input " placeholder="Digite seu e-mail">
+                                    <!-- <span class="message message--success">This is a Success Message</span> -->
+                                </div>
+        
+                                <div class="data">
+                                    <label for="" class="data__label">Ultima da de Admissão</label>
+                                    <input type="text" class="data__input " placeholder="Digite seu e-mail">
+                                    <!-- <span class="message message--success">This is a Success Message</span> -->
+                                </div>
+        
+                                <div class="data">
+                                        <label for="" class="data__label">Responda a pergunta:</label>
+                                        <textarea class="data__input" placeholder="Porque você deveria ser contratado pela Alluminox?"></textarea>
+                                </div>
+
+
+                                <div class="data__separator"></div>
+        
+
+
+                                <div class="data ">
+                                    <span class="data__text">Aceitar Termos e Condições</span>
+
+                                    <div class="data__checkbox">
+                                        <label for="terms">Li e aceito todos os <a href="#">Termos e Contato </a></label>
+                                        <input type="checkbox" name="terms" id="terms"> 
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="data__btn btn btn--blue btn--xs btn--outline mg-md">Cadastrar meu Currículo</button>
+                                <button type="submit" class="data__btn btn btn--red btn--xs btn--outline mg-md">Cancelar</button>
+                            </form>
+
+
+
+                            <div class="contact">
+                           
+                                <h1 class="contact__title">Preencha todos os campos</h1>
+
+                                <ul class="list">
+                                        <li class="list__item"><a href="#" class="list__link">Endereço da Empresa</a></li>
+                                        <li class="list__item"><a href="#" class="list__link">São José do Rio Preto</a></li>
+                                        <li class="list__item"><a href="#" class="list__link">São Paulo - SP</a></li>
+                                        <li class="list__item"><a href="#" class="list__link">15077-014</a></li>
+                                        <li class="list__item"><a href="#" class="list__link">17 9999-9999</a></li>
+                                        <li class="list__item"><a href="#" class="list__link">S.A.C</a></li>
+                                        <li class="list__item"><a href="#" class="list__link">atendimento@alluminox.com.br</a></li>
+                                    </ul>
+                    
+
+                            </div>
+                    </div>
+
+                </section>
+
+
+                <footer class="footer">
+                    <div class="container">
+                        <div class="footer__wrapper">
+                    
+                            <div class="footer__guide">
+                                <h1 class="footer__guide-title">Mapa da Página</h1>
+                                <ul class="footer__list">
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i>Início</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i>Projetos</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i>Produtos</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i>Sobre Nós</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i>Contato</a></li>
+                                </ul>            
+                            </div>    
+
+                            <div class="footer__guide">
+                                <h1 class="footer__guide-title">Guia de Ajuda</h1>
+                                <ul class="footer__list">
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i>Requisitar Orçamento</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i>Trabalhe Conosco</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i>Minha Conta</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i>Sobre Meus Dados</a></li>
+                                </ul>            
+                            </div>    
+
+                            <div class="footer__guide">
+                                <h1 class="footer__guide-title">Entre em Contato</h1>
+                                <ul class="footer__list">
+                                    <li><a href="#"><i class="fab fa-whatsapp"></i>Whatsapp</a></li>
+                                    <li><a href="#"><i class="fas fa-headphones-alt"></i>0800-0011050</a></li>
+                                    <li><a href="#"><i class="fas fa-envelope"></i>atendimento@alluminox.com.br</a></li>
+                                </ul>            
+                            </div>    
+                        </div>
+                    </div>
+                    
+                    <div class="footer__message">
+                        <span class="copyright">&copy; 2019 - Todos os Direitos Reservados | Desenvolvido 
+                                por Alluminox Indústria e Comércio LTDA | CNPJ: 000.000.000/0000.00</span>
+                    </div>
+                </footer>
+
+            </main>
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/16fae2e2ed.js"></script>
+    <script>
+    document.querySelector(".mobile-btn")
+    .addEventListener('click', (event) => {
+        event.preventDefault();
+
+        document.querySelector(".layout")
+        .classList.toggle('layout--mobile');
+    })
+    </script>
+
+</body>
+</html>

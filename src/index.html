@@ -11,30 +11,33 @@
 </head>
 <body>
 
+  
     <div class="layout layout--mobile">
-            <aside class="aside layout__aside">
+            <aside class="aside layout__aside ">
                 <span class="aside__header">Consulte o Guia</span>
                 <ul class="list">
-                    <li class="list__item"><a href="#" class="list__link">Página Inicial</a></li>
-                    <li class="list__item"><a href="#" class="list__link">Produtos</a></li>
-                    <li class="list__item"><a href="#" class="list__link">Projeto</a></li>
-                    <li class="list__item"><a href="#" class="list__link">Trabalhe Conosco</a></li>
-                    <li class="list__item"><a href="#" class="list__link">Faça um Orçamento</a></li>
-                    <li class="list__item"><a href="#" class="list__link">Sobre</a></li>
-                    <li class="list__item"><a href="#" class="list__link">Contato</a></li>
+                    <li class="list__item"><a href="#" class="list__link"><i class="fas  fa-angle-right  "></i> Página Inicial</a></li>
+                    <li class="list__item"><a href="#" class="list__link"><i class="fas  fa-angle-right  "></i>Produtos</a></li>
+                    <li class="list__item"><a href="#" class="list__link"><i class="fas  fa-angle-right  "></i>Projeto</a></li>
+                    <li class="list__item"><a href="#" class="list__link"><i class="fas  fa-angle-right  "></i>Trabalhe Conosco</a></li>
+                    <li class="list__item"><a href="#" class="list__link"><i class="fas  fa-angle-right  "></i>Faça um Orçamento</a></li>
+                    <li class="list__item"><a href="#" class="list__link"><i class="fas  fa-angle-right  "></i>Sobre</a></li>
+                    <li class="list__item"><a href="#" class="list__link"><i class="fas  fa-angle-right  "></i>Contato</a></li>
                 </ul>
 
                 <div class="social">
-                    <a class="social__item">
-                        <i class="material-icons social__item-icon">share</i>
+                    <span class="social__title">Siga-nos na redes sociais</span>
+
+                    <a class="social__item social__item--facebook">
+                        <i class=" social__item-icon fab fa-facebook-f"></i>
                     </a>
 
-                    <a class="social__item">
-                        <i class="material-icons social__item-icon">notifications</i>
+                    <a class="social__item social__item--google">
+                            <i class=" social__item-icon fab fa-google"></i>
                     </a>
 
-                    <a class="social__item">
-                        <i class="material-icons social__item-icon">thumb_up_alt</i>
+                    <a class="social__item social__item--twitter">
+                        <i class=" social__item-icon fab fa-twitter"></i>
                     </a>
                 </div>
             </aside>    
@@ -48,13 +51,15 @@
                         <div class="header__content header__item-right">
                             
                             <form action="#" class="search">
-                                <input type="search" placeholder="Pesquisa">
+                                <input type="text" placeholder="Pesquisa">
+                                <button type="submit">
+                                        <i class="fas fa-search"></i>
+                                </button>
                             </form>
 
-                            <button class="btn-login">Minha Conta<i class="material-icons">lock</i>
-                            </button>
+                            <button class="btn-login">Minha Conta<i class="fas fa-lock"></i></button>
                             <a href="#" class="mobile-btn">
-                                <i class="material-icons">menu</i>
+                                <i class="fas fa-bars"></i>
                             </a>
  
                         </div>
@@ -64,15 +69,19 @@
                 
                 <section class="banner">
 
-                   <video class="banner__view" autoplay="true" loop="true" src="videos/Metropole - 2337.mp4"></video>
+                   <video class="banner__view" autoplay loop muted >
+
+                    <source src="videos/walking.mp4" type="video/mp4" >
+                   </video>
                     <div class="banner__content">
-                        <span class="banner__intro">Vocês são nossa maior prioridade!</span>
+                        <span class="banner__intro">Um de muitos meios para nós, realizarmos seu sonho!</span>
                         <h1 class="banner__title">Venha conheçer os nossos produto &</h1>
                         <h2 class="banner__subtitle">Faça parte dessa solução.</h2>
-                        <p class="banner__paragraph">O seu orçamento é tratado por nós com profissionalismo e seriedade por nossa equipe.</p>
-                        <p class="banner__paragraph">Envie-nos o seu orçamento, e entraremos em contato!</p>
+                        <p class="banner__paragraph">O seu orçamento é tratado por nós com profissionalismo e seriedade por nossa equipe!</p>
+                        <p class="banner__paragraph">Envie-nos o seu orçamento e entraremos em contato!</p>
              
-                        <a href="#" class="banner__btn btn btn--white ">Saiba Mais</a>
+                        <a href="#" class="banner__btn btn btn--blue btn--outline btn--circle ">Fazer Orçamento</a>
+                        <a href="#" class="banner__btn btn btn--circle btn--border ">Saiba Mais</a>
                      
         
                     </div>
@@ -92,14 +101,14 @@
 
                         <article class="attribute">
                             <span class="attribute__icon">
-                                <i class="material-icons">favorite</i>
+                                    <i class="fas fa-heart"></i>
                             </span>
                             <h2 class="secondary-text">Sleek Design</h2>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum repellendus harum voluptates ipsa corporis iusto.</p>
                         </article>
                         <article class="attribute">
                             <span class="attribute__icon">
-                                <i class="material-icons">flash_on</i>
+                                    <i class="fas fa-award"></i>
                             </span>
                             <h2 class="secondary-text secondary-text--bordered">Sleek Design</h2>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum repellendus harum voluptates ipsa corporis iusto.</p>
@@ -107,7 +116,7 @@
     
                         <article class="attribute">
                             <span class="attribute__icon">
-                                <i class="material-icons">verified_user</i>
+                                    <i class="fas fa-user-shield"></i>
                             </span>
                             <h2 class="secondary-text">Sleek Design</h2>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum repellendus harum voluptates ipsa corporis iusto.</p>
@@ -141,12 +150,13 @@
                             </div>
 
                             <div class="about__shape">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/GtBAl5-ShwI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/GtBAl5-ShwI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                                <img src="images/about.jpg" alt="">
                             </div>
                         </div>
 
 
-                        <button class="btn btn--outline btn--blue-dark btn--circle">Enviar Sugestão</button>
+                      
 
 
                     </div>
@@ -187,7 +197,7 @@
                                             dolorum non perspiciatis? Accusamus fugit aperiam adipisci beatae sit, culpa at aspernatur                                         
                                         </span>
 
-                                        <button class="project__btn btn btn--md btn--outline btn--purple-light btn--circle">Visualizar Detalhes</button>
+                                        <button class="project__btn btn btn--md btn--outline btn--blue-light btn--circle">Visualizar Detalhes</button>
                                         <button class="project__btn btn btn--md btn--outline btn--circle btn--yellow">Obter</button>
                                     </div>
                                 </div>
@@ -214,7 +224,7 @@
                                                 dolorum non perspiciatis? Accusamus fugit aperiam adipisci beatae sit, culpa at aspernatur                                         
                                             </span>
     
-                                            <button class="project__btn btn btn--md btn--outline btn--purple-light btn--circle">Visualizar Detalhes</button>
+                                            <button class="project__btn btn btn--md btn--outline btn--blue-light btn--circle">Visualizar Detalhes</button>
                                             <button class="project__btn btn btn--md btn--outline btn--circle btn--yellow">Obter</button>
                                         </div>
                                     </div>
@@ -240,7 +250,7 @@
                                                     dolorum non perspiciatis? Accusamus fugit aperiam adipisci beatae sit, culpa at aspernatur                                         
                                                 </span>
         
-                                                <button class="project__btn btn btn--md btn--outline btn--purple-light btn--circle">Visualizar Detalhes</button>
+                                                <button class="project__btn btn btn--md btn--outline btn--blue-light btn--circle">Visualizar Detalhes</button>
                                                 <button class="project__btn btn btn--md btn--outline btn--circle btn--yellow">Obter</button>
                                             </div>
                                         </div>
@@ -266,7 +276,7 @@
                                                         dolorum non perspiciatis? Accusamus fugit aperiam adipisci beatae sit, culpa at aspernatur                                         
                                                     </span>
             
-                                                    <button class="project__btn btn btn--md btn--outline btn--purple-light btn--circle">Visualizar Detalhes</button>
+                                                    <button class="project__btn btn btn--md btn--outline btn--blue-light btn--circle">Visualizar Detalhes</button>
                                                     <button class="project__btn btn btn--md btn--outline btn--circle btn--yellow">Obter</button>
                                                 </div>
                                             </div>
@@ -292,7 +302,7 @@
                                                     dolorum non perspiciatis? Accusamus fugit aperiam adipisci beatae sit, culpa at aspernatur                                         
                                                 </span>
         
-                                                <button class="project__btn btn btn--md btn--outline btn--purple-light btn--circle">Visualizar Detalhes</button>
+                                                <button class="project__btn btn btn--md btn--outline btn--blue-light btn--circle">Visualizar Detalhes</button>
                                                 <button class="project__btn btn btn--md btn--outline btn--circle btn--yellow">Obter</button>
                                             </div>
                                         </div>
@@ -318,7 +328,7 @@
                                                     dolorum non perspiciatis? Accusamus fugit aperiam adipisci beatae sit, culpa at aspernatur                                         
                                                 </span>
         
-                                                <button class="project__btn btn btn--md btn--outline btn--purple-light btn--circle">Visualizar Detalhes</button>
+                                                <button class="project__btn btn btn--md btn--outline btn--blue-light btn--circle">Visualizar Detalhes</button>
                                                 <button class="project__btn btn btn--md btn--outline btn--circle btn--yellow">Obter</button>
                                             </div>
                                         </div>
@@ -416,7 +426,7 @@
                             </article>
 
                             
-                            <button class=" mt-md btn btn--purple-light btn--circle btn--outline btn--purple">Quero um Orçamento!</button>
+                            <button class=" mt-md btn btn--purple-light btn--circle btn--outline btn--blue-light">Faça um Orçamento!</button>
 
                         
 
@@ -530,7 +540,7 @@
 
                         
                         
-                        <button class=" mt-md btn btn--purple-light btn--circle btn--outline btn--purple">Seja um fornecedor!</button>
+                        <button class=" mt-md btn btn--purple-light btn--circle btn--outline btn--blue-light">Seja um fornecedor!</button>
                     </div>
 
                 </section>
@@ -568,32 +578,30 @@
                             <div class="footer__guide">
                                 <h1 class="footer__guide-title">Mapa da Página</h1>
                                 <ul class="footer__list">
-                                    <li><a href="#"><i class="material-icons">keyboard_arrow_right</i>Início</a></li>
-                                    <li><a href="#"><i class="material-icons">keyboard_arrow_right</i>Projetos</a></li>
-                                    <li><a href="#"><i class="material-icons">keyboard_arrow_right</i>Produtos</a></li>
-                                    <li><a href="#"><i class="material-icons">keyboard_arrow_right</i>Sobre Nós</a></li>
-                                    <li><a href="#"><i class="material-icons">keyboard_arrow_right</i>Contato</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i>Início</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i>Projetos</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i>Produtos</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i>Sobre Nós</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i>Contato</a></li>
                                 </ul>            
                             </div>    
 
                             <div class="footer__guide">
                                 <h1 class="footer__guide-title">Guia de Ajuda</h1>
                                 <ul class="footer__list">
-                                    <li><a href="#"><i class="material-icons">keyboard_arrow_right</i>Requisitar Orçamento</a></li>
-                                    <li><a href="#"><i class="material-icons">keyboard_arrow_right</i>Trabalhe Conosco</a></li>
-                                    <li><a href="#"><i class="material-icons">keyboard_arrow_right</i>Minha Conta</a></li>
-                                    <li><a href="#"><i class="material-icons">keyboard_arrow_right</i>Sobre Meus Dados</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i>Requisitar Orçamento</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i>Trabalhe Conosco</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i>Minha Conta</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i>Sobre Meus Dados</a></li>
                                 </ul>            
                             </div>    
 
                             <div class="footer__guide">
-                                <h1 class="footer__guide-title">Mapa da Página</h1>
+                                <h1 class="footer__guide-title">Entre em Contato</h1>
                                 <ul class="footer__list">
-                                    <li><a href="#"><i class="material-icons">keyboard_arrow_right</i>Início</a></li>
-                                    <li><a href="#"><i class="material-icons">keyboard_arrow_right</i>Projetos</a></li>
-                                    <li><a href="#"><i class="material-icons">keyboard_arrow_right</i>Produtos</a></li>
-                                    <li><a href="#"><i class="material-icons">keyboard_arrow_right</i>Sobre Nós</a></li>
-                                    <li><a href="#"><i class="material-icons">keyboard_arrow_right</i>Contato</a></li>
+                                    <li><a href="#"><i class="fab fa-whatsapp"></i>Whatsapp</a></li>
+                                    <li><a href="#"><i class="fas fa-headphones-alt"></i>0800-0011050</a></li>
+                                    <li><a href="#"><i class="fas fa-envelope"></i>atendimento@alluminox.com.br</a></li>
                                 </ul>            
                             </div>    
                         </div>
@@ -609,6 +617,8 @@
     </div>
 
 
+
+    <script src="https://kit.fontawesome.com/16fae2e2ed.js"></script>
     <script>
     document.querySelector(".mobile-btn")
     .addEventListener('click', (event) => {

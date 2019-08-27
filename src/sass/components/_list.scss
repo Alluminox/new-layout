@@ -18,13 +18,14 @@
 
 .list .list__item {
     font-size: 1rem;
-    padding: 1.5rem 2rem;
+    padding: 1.85rem 2.45rem;
+
     cursor: pointer;
     transition: all .4s;
 }
 
 .list .list__item:hover {
-    background-color: #fff;
+    background-color: #f7f7f7;
     
 }
 
@@ -37,4 +38,18 @@
     font-size: 1.45rem;
     font-weight: 400;
     color: #302f2f;
+    // color: #fff;
+
+
+    display: flex;
+    align-items: center;
+
+
+    i { 
+        width: 3rem;
+        // margin-right: 1rem;
+        font-size: 1.54rem;
+        color: #585858;
+    }
+
 }

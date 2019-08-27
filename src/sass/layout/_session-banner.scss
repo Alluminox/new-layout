@@ -4,7 +4,7 @@
     width: 100%;
     // height: 97vh;
 
-    height: 100vh;
+    height: 70vh;
     background-color: $white;
     background: 
     linear-gradient(to right bottom , rgba($black,0.2), rgba($black,0.2)), 
@@ -30,6 +30,11 @@
 
     // box-shadow: 1rem 5rem 3rem #000;
 
+
+    @media(min-width: 768px) {  
+        height: 100vh;
+    }
+
 &:after {
     position: absolute;
     width: 100%;
@@ -38,7 +43,7 @@
     content: '';
 
     background-image: 
-    linear-gradient(to right bottom , rgba($black,0.2), rgba($black,0.4)), 
+    linear-gradient(to right bottom , rgba($black,0.6), rgba($black,0.7)), 
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");;
     z-index: 401;
 }
@@ -60,16 +65,21 @@
     /* background-color: red; */
     text-align: center;
     // background-color: #fff;
+    padding: 1rem;
     // width: 50%;
 
     position: relative;
     z-index: 501;
 
     // transform: translateY(-5rem);
+
+    @media(min-width: 768px) {  
+        padding: 0;
+    }
 }
 
 .banner__intro {
-    font-size: 1.2rem;
+    font-size: .95rem;
     word-spacing: .5rem;
     letter-spacing: .1rem;
     color: $white;
@@ -77,23 +87,38 @@
     font-weight: 5  00;
     margin-bottom: 2rem;
     // background-color: #fff;
+
+
+    @media(min-width: 768px) {  
+        font-size: 1.2rem;
+    }
 }
 
 .banner__subtitle {
-    font-size: 3.8rem;
+    font-size: 2.78rem;
     font-weight: 300;
     margin-top: -1.57rem;
     color: #fff;
     margin-bottom: 2rem;
+
+    
+    @media(min-width: 768px) {  
+    font-size: 3.8rem;
+    }
 }
 
 .banner__title {
     // background-color: red;
-    font-size: 4.5rem;
+    font-size: 3rem;
     color: $white;
-    letter-spacing: 2px;
+    // text-align: justify;
     font-weight: 300;
     // text-transform: uppercase;
+    
+    @media(min-width: 768px) {  
+        letter-spacing: 2px;
+        font-size: 4.5rem;
+    }
 }
 
 
@@ -108,8 +133,15 @@
 }
 
 .banner__btn {
-    margin-top: 3rem;
-}
-.banner__btn:not(:last-child) {
-    margin-right: 1rem; 
+    margin-top: 1.5rem;
+    width: 100%;
+
+    @media(min-width: 480px) { 
+        margin-top: 3rem;
+        width: auto;
+
+        &:not(:last-child) {
+            margin-right: 1rem; 
+        }
+    }
 }

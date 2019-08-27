@@ -7,8 +7,17 @@
     font-family: 'Raleway', sans-serif;
     font-size: 62.5%;
     font-weight: 400; 
+    width: auto;
 }
 
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;  
+}
 
 body {
     background-color: $white;

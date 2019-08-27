@@ -24,6 +24,12 @@
     }
 
 
+    &--xs {
+        padding: 1.8rem 2rem;  
+        font-size: 1.42rem; 
+        font-weight: 300;
+    }
+
     &--md {
         padding: 2rem;  
         font-size: 1.28rem;
@@ -65,9 +71,19 @@
         --bg: #f5b64c;
     }
 
+    &--green {
+        --color: #{$white};
+        --bg: #41e09e;
+    }
+
     &--border {
         border: 1px solid $white;
     
+    }
+
+    &--red {
+        --color: #{$white};
+        --bg: #d64a51;
     }
 
     &--purple {
@@ -86,17 +102,33 @@
 
     }
 
+    
+    &--blue-light {
+        --color: #{$white};
+        --bg: #4a82fa;
+
+        // #334458
+
+    }
 
 }
 
 
 .btn-login {
-    padding: .85rem 1rem;
+    // min-width: 12rem;
+    padding: .85rem .85rem;
     font-weight: 500;
     border-radius: 2px;
     font-size: 1.4rem;
+
+
     cursor: pointer;
-    margin-left: 2.5rem;
+
+    width: 100%;
+    // margin: 1rem;
+
+    justify-content: center;
+
     background-color: transparent;
     // border: 1px solid rgb(47, 47, 47);
     border: 1px solid rgba(255, 255, 255, 0.178);
@@ -116,11 +148,34 @@
         font-size: 1.6rem;
     }
 
+    @media(min-width: 768px) { 
+        margin-left: 2.5rem;
+        width: auto;
+    }
+
 }
 
 
 .mobile-btn {
-    margin-left: 4rem;
+    // 
     // color: #333232;
     color: #fff;
+    order: -1;
+    // margin-left: auto;
+    margin-bottom: 2rem;
+
+    i {
+        font-size: 1.89rem;
+    }
+
+    @media(min-width: 768px) { 
+        margin-left: 4rem;
+        margin-bottom: 0;
+        order: 1;
+
+        i {
+            font-size: 1.742rem;
+        }
+    }
+    
 }

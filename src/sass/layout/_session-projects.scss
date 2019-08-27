@@ -20,7 +20,8 @@
         position: absolute;
         top: 0;
         clip-path: polygon(100% 0, 100% 100%, 63% 94%, 32% 67%, 0% 75%, 0 0);
-        background-color: rgb(109, 95, 238);
+        // background-color: rgb(109, 95, 238);
+        background-color: #535afd;
         z-index: 800;
 
         // polygon(100% 0, 100% 100%, 61% 94%, 34% 64%, 0% 75%, 0 0)
@@ -45,9 +46,15 @@
 
 .projects__wrapper {
     display: flex;
-    
+    width: 100%;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+
+    padding: 0 2rem;
+
+    @media(min-width: 480px) { 
+        padding: 0 ;
+    }
 }
 
 .project {
@@ -56,8 +63,15 @@
     // margin: 0 1rem;
     // padding: 1rem;
     width: 100%;
+
+
+
+    @media(min-width: 480px) { 
+        max-width: 30rem;
+    }
+
+    // flex-grow: 4;
     background-color: #fff;
-    max-width: 30rem;
     display: flex;
     flex-wrap: wrap;
     box-shadow: 0 1rem 3rem rgba(0,0, 0,0.2);
@@ -75,8 +89,17 @@
 .project__btn {
     margin-top: 1rem;
 
-    &:nth-of-type(2) {
-        margin-left: 1rem;
+
+
+    width: 100%;
+
+    
+    @media(min-width: 480px) { 
+        // padding: 0 ;
+        width: auto; 
+        &:nth-of-type(2) {
+            margin-left: 1rem;
+        }
     }
 }
 
@@ -166,7 +189,7 @@
 .progress-bar__pipe {
     // border-top-right-radius: 2px;
     // border-bottom-right-radius: 2px;
-    background-color: #7928ff;
+    background-color: #3f7bb7;
     object-fit: cover;
     transition: all .2s;
     width: 70%;
