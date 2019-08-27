@@ -11,18 +11,25 @@
 </head>
 <body>
 
+
+    <div class="loader-wrapper">
+        <span class="loading">
+            <span class="loading__inner"></span>
+        </span>
+    </div>
   
-    <div class="layout layout--mobile">
+    <div class="layout layout--mobile ">
             <aside class="aside layout__aside ">
                 <span class="aside__header">Consulte o Guia</span>
                 <ul class="list">
-                    <li class="list__item"><a href="#" class="list__link"><i class="fas  fa-angle-right  "></i> Página Inicial</a></li>
-                    <li class="list__item"><a href="#" class="list__link"><i class="fas  fa-angle-right  "></i>Produtos</a></li>
-                    <li class="list__item"><a href="#" class="list__link"><i class="fas  fa-angle-right  "></i>Projeto</a></li>
-                    <li class="list__item"><a href="#" class="list__link"><i class="fas  fa-angle-right  "></i>Trabalhe Conosco</a></li>
-                    <li class="list__item"><a href="#" class="list__link"><i class="fas  fa-angle-right  "></i>Faça um Orçamento</a></li>
-                    <li class="list__item"><a href="#" class="list__link"><i class="fas  fa-angle-right  "></i>Sobre</a></li>
-                    <li class="list__item"><a href="#" class="list__link"><i class="fas  fa-angle-right  "></i>Contato</a></li>
+                    <li class="list__item"><a href="#home" class="list__link"><i class="fas  fa-angle-right"></i> Página Inicial</a></li>
+                    <li class="list__item"><a href="#products" class="list__link"><i class="fas  fa-angle-right"></i>Produtos</a></li>
+                    <li class="list__item"><a href="#projects" class="list__link"><i class="fas  fa-angle-right"></i>Projeto</a></li>
+                    <li class="list__item"><a href="/working-us" class="list__link"><i class="fas  fa-angle-right"></i>Trabalhe Conosco</a></li>
+                    <li class="list__item"><a href="/forms/send-profile" class="list__link"><i class="fas  fa-angle-right"></i>Faça um Orçamento</a></li>
+                    <li class="list__item"><a href="#providers" class="list__link"><i class="fas  fa-angle-right"></i>Fornecedores</a></li>
+                    <li class="list__item"><a href="#about" class="list__link"><i class="fas  fa-angle-right"></i>Sobre</a></li>
+                    <li class="list__item"><a href="#contact" class="list__link"><i class="fas  fa-angle-right"></i>Contato</a></li>
                 </ul>
 
                 <div class="social">
@@ -42,7 +49,7 @@
                 </div>
             </aside>    
 
-            <main class="layout__content">
+            <main class="layout__content" id="home">
                 <header class="header">
                     <div class="container">
                         <a href="#" class="header__logo">
@@ -58,7 +65,7 @@
                             </form>
 
                             <button class="btn-login">Minha Conta<i class="fas fa-lock"></i></button>
-                            <a href="#" class="mobile-btn">
+                            <a href="/login" class="mobile-btn">
                                 <i class="fas fa-bars"></i>
                             </a>
  
@@ -71,7 +78,7 @@
 
                    <video class="banner__view" autoplay loop muted >
 
-                    <source src="videos/walking.mp4" type="video/mp4" >
+                    <source src="videos/Metropole - 2337.mp4" type="video/mp4" >
                    </video>
                     <div class="banner__content">
                         <span class="banner__intro">Um de muitos meios para nós, realizarmos seu sonho!</span>
@@ -80,14 +87,14 @@
                         <p class="banner__paragraph">O seu orçamento é tratado por nós com profissionalismo e seriedade por nossa equipe!</p>
                         <p class="banner__paragraph">Envie-nos o seu orçamento e entraremos em contato!</p>
              
-                        <a href="#" class="banner__btn btn btn--blue btn--outline btn--circle ">Fazer Orçamento</a>
-                        <a href="#" class="banner__btn btn btn--circle btn--border ">Saiba Mais</a>
+                        <a href="/forms/send-profile" class="banner__btn btn btn--blue btn--outline btn--circle ">Fazer Orçamento</a>
+                        <a href="#more" class="banner__btn btn btn--circle btn--border ">Saiba Mais</a>
                      
         
                     </div>
                 </section>
             
-                <section class="attributes">
+                <section class="attributes" id="more">
                     <div class="container">
 
                         <div class="title">
@@ -124,7 +131,7 @@
                      </div>
                 </section>
 
-                <section class="about">
+                <section class="about" id="about">
                     <div class="container">
                         
                         <div class="title">
@@ -163,7 +170,7 @@
                 </section>
 
                 <!-- @projects -->
-                <section class="projects">
+                <section class="projects" id="projects">
                     <div class="container">
 
                         <div class="title title--dark">
@@ -343,7 +350,7 @@
 
                 </section>
 
-                <section class="gallery">
+                <section class="gallery" id="products">
                     <div class="container">
                             <article class="title">
                                 <h2 class="title__primary">Algum de Nossos Produtos</h2>
@@ -435,7 +442,7 @@
 
 
 
-                <section class="providers">
+                <section class="providers" id="providers">
 
                     <div class="container">
 
@@ -540,7 +547,7 @@
 
                         
                         
-                        <button class=" mt-md btn btn--purple-light btn--circle btn--outline btn--blue-light">Seja um fornecedor!</button>
+                        <a class=" mt-md btn btn--purple-light btn--circle btn--outline btn--blue-light" href="/forms/send-provider">Seja um fornecedor!</a>
                     </div>
 
                 </section>
@@ -596,7 +603,7 @@
                                 </ul>            
                             </div>    
 
-                            <div class="footer__guide">
+                            <div class="footer__guide" id="contact">
                                 <h1 class="footer__guide-title">Entre em Contato</h1>
                                 <ul class="footer__list">
                                     <li><a href="#"><i class="fab fa-whatsapp"></i>Whatsapp</a></li>
@@ -618,16 +625,14 @@
 
 
 
-    <script src="https://kit.fontawesome.com/16fae2e2ed.js"></script>
-    <script>
-    document.querySelector(".mobile-btn")
-    .addEventListener('click', (event) => {
-        event.preventDefault();
 
-        document.querySelector(".layout")
-        .classList.toggle('layout--mobile');
-    })
-    </script>
+    <script src="https://kit.fontawesome.com/16fae2e2ed.js"></script>
+    <script src="js/utils/loading.js"></script>
+    <script src="js/utils/menu-responsive.js"></script>
+    <script src="js/utils/index.js"></script>
+    <script src="js/controllers/IndexController.js"></script>
+    <script src="js/app.js"></script>
+
 
 </body>
 </html>
