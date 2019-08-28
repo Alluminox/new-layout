@@ -1,3 +1,49 @@
 .mt-md {
     margin-top: 4rem;
 }
+
+.bg-dark {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(48, 38, 58);
+}
+
+.bg-light {
+    background-color: #f1f1f1;
+}
+
+/*Animacao*/
+
+
+[data-anime] {
+    opacity: 0;
+    visibility: hidden;
+    backface-visibility: hidden;
+    transition: all .5s;
+}
+
+
+
+[data-anime="left"] {
+    transform: translate3d(-10rem , 0 , 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(10rem , 0 , 0);
+}
+
+[data-anime="top"] {
+    transform: translate3d(0 , -10rem , 0);
+}
+
+[data-anime="bottom"] {
+    transform: translate3d(10rem , 10rem , 0);
+}
+
+
+[data-anime].animate {
+    opacity: 1;
+    visibility: visible;
+    backface-visibility: visible;
+    transform: translate3d(0,0,0);
+}

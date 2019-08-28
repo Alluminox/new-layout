@@ -1,0 +1,33 @@
+$card-spacing: 1.5rem;
+
+.card {
+    // width: 100%;
+    background-color: $white;
+    // margin: 2rem 1rem;
+  
+    // background-color: #9e61ff;
+    // min-height: 20rem;
+    box-shadow: 0 3px 1rem rgba($black, .2);
+
+    &__top {
+        padding: $card-spacing;
+        border-bottom: 1px solid #f0efef;
+    }
+
+    &__content {
+        padding: $card-spacing;
+        font-size: 1.92rem;
+        font-weight: 400;
+
+    }
+    &__footer {
+        padding: $card-spacing;
+    }
+
+
+    &__title {
+        font-size: 1.46rem;
+        display: inline-block;
+        font-weight: 500;
+    }
+}

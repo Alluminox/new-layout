@@ -20,7 +20,7 @@ html,body {
 }
 
 body {
-    background-color: $white;
+    background-color: #ffffff;
     line-height: 1.6;
 }
 
@@ -30,4 +30,48 @@ a {
 
 ul {
     list-style: none;
+}
+
+
+p {
+    font-size: 1.24rem;
+}
+
+
+a {
+    color: #4d599e;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+strong {
+    color: #000;
+    margin: 0 .5rem;
+    text-align: right;
+    font-weight: 500;
+    color: #3b457a;
+    font-size: 1.2rem;
+}
+
+
+ul  {
+    display: block;
+
+}
+
+
+ul li {
+    padding: 1rem 0;
+}
+
+
+
+textarea {
+    resize: none;
+    min-height: 10rem;
+}
+
+
+select option {
+    font-size: 1.48rem;
 }

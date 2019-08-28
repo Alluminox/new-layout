@@ -9,6 +9,7 @@
 @import './base/typograph';
 @import './base/utils';
 
+@import './components/loading';
 @import './components/header';
 @import './components/list';
 @import './components/search';
@@ -17,7 +18,8 @@
 @import './components/social-list';
 @import './components/contact';
 @import './components/card';
-@import './components/loading';
+@import './components/table';
+
 
 
 @import './layout/session-banner';
@@ -34,3 +36,6 @@
 
 
 @import './pages/index';
+@import './pages/security';
+@import './pages/messages';
+@import './pages/my-account';

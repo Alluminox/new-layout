@@ -9,6 +9,7 @@ class IndexController {
         loading(".loader-wrapper");
         activeMenuResponsive(".mobile-btn");
         utilitites.suavityScroll();
+        utilitites.animateScroll();
     }
 
 }

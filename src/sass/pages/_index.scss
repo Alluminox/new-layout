@@ -9,7 +9,7 @@
 
 .layout--mobile .layout__aside {
     position: fixed;   
-    transform: translateX(32.5rem);
+    transform: translateX(28.5rem);
     box-shadow: none;
 }
 
@@ -17,7 +17,7 @@
     display: flex;
 
     &__content {
-        // width: calc(100% -  32.5rem);
+        width: 100%;
         height: 100%;
         position: relative;
     }

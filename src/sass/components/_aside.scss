@@ -5,9 +5,17 @@
 
     position: fixed;
     height: 100%;
+    top: 0;
     right: 0; 
-    top: 0;     
+ 
 
+    overflow: auto;
+
+
+    @media(min-width: 1024px) {
+        top: 8rem;    
+        height: auto;
+    }
     border-left: 1px solid #ffffff;
   
 }

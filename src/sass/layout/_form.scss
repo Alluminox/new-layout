@@ -1,35 +1,50 @@
 .forms {
-    // width: 100%;
-    // flex-grow: 2;
     width: 100%;
-    max-width: 50%;
-}
-
-textarea {
-    resize: none;
-    min-height: 10rem;
-}
 
 
-select option {
-    font-size: 1.48rem;
+    // background-color: red;
+
+
+    @media(min-width: 768px) {
+        max-width: 50%;
+
+        padding: 4rem;
+    }
 }
+
+
 
 .form {
     font-size: 1rem;
-    // background-color: blue;
-    // min-height: 40rem;
+    background-color: #fafafa;
+    padding: 2rem 0;
 
-    padding: 7rem 0;
+    @media(min-width: 768px) {
+        padding: 4rem 0;
+    }
 }
 
 .form .container {
     // background-color: blue;
-
     display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+
+
+    @media(min-width: 768px) {
+        padding: 0;
+    }
 }
 
 
+
+.form .card {
+    margin-bottom: 2.5rem;
+    
+}
 
 
 
@@ -88,6 +103,32 @@ select option {
     }
 
 
+
+    &__radio {}
+
+
+    &__file {
+
+
+        input[type=file] {
+            display: none;
+        }
+    }
+    
+
+    &__file-btn {
+        display: block;
+        // height: 1rem;
+        padding: 1rem;
+        text-align: center;
+        width: 100%;
+        font-size: 1.27rem;
+
+        color: #fff;
+        font-weight: 400;
+        background-color: #0b7544;
+        margin: 1rem 0;
+    }
 
     &__checkbox {
         display: flex;
