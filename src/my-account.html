@@ -9,8 +9,281 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="bg-dark">
+<body class="bg-light">
 
+
+    <header class="dash-header">
+
+        <div class="wrapper">
+            <div>
+                <h1 class="text-primary">Minha Conta</h1>
+                <h2 class="text-secondary">Altere os dados de seu Cadastro!</h2>
+                <a href="#" class="btn btn--blue btn--xs">Sair da Minha Conta</a>
+            </div>
+
+            <div class="user">
+
+            
+
+                <figure class="user__photo">
+                    <img src="images/about.jpg" alt="">
+                    <figcaption>User</figcaption>  
+                </figure>
+            </div>
+        </div>
+
+
+    </header>
+
+    <div class="my-container">
+
+        <aside class="my-aside"></aside>
+
+        <main class="my-container__content">
+
+            <!-- TABS -->
+            <nav class="tabs">
+                <ul>
+                    <li data-target="tab1" class="tabs__button active">
+                        <span>Informações Gerais</span>
+                    </li>
+
+                    <li data-target="tab2"  class="tabs__button">
+                        <span> Atualizar Dados Pessoais  </span>        
+                    </li>
+
+                    <li data-target="tab3"  class="tabs__button">
+                        <span>Atualizar Dados do Login </span>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="tab1" class="tabs-content active">
+                <div class="title-separator">
+                    <span>Configurações Iniciais de sua Conta</span>
+                </div>
+                <p class="paragraph">Olá <strong class="paragraph__mark" >usuario@usuario.com.br</strong>, seja bem vindo a sua tela, fique a vontade para alterar suas informações</p>
+        
+                <div class="card">
+                    <div class="card__top">
+                        <span class="card__title">Orçamentos Enviados</span>
+                    </div>
+    
+                    <div class="card__bottom">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Token</th>
+                                    <th>Descrição</th>
+                                    <th>Valor</th>
+                                    <th>Data de Envio</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+    
+                            <tbody>
+    
+                                <tr>
+                                    <td>s9as44add6asadsadas74da</td>
+                                    <td>Lorem ipsum dolor sit amet consectet</td>
+                                    <td>R$ 10.22</td>
+                                    <td>Data de Envio</td>
+                                    <td>
+                                        <span class="status status--pending">Status</span>
+                                    </td> 
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+    
+    
+                <div class="card ">
+                        <div class="card__top">
+                            <span class="card__title">Currículos Cadastrados</span>
+                        </div>
+        
+                        <div class="card__bottom">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Token</th>
+                                        <th>Nome</th>
+                                        <th>E-mail</th>
+                                        <th>Data Envio</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+        
+                                <tbody>
+        
+                                    <tr>
+                                        <td>s9as44add6asadsadas74da</td>
+                                        <td>Lorem ipsum dolor sit amet con</td>
+                                        <td>Data de Envio</td> 
+                                        
+                                        <td>12/05/2019</td>
+                                            <td>
+                                                    <span class="status status--pending">Status</span>
+                                            </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+            </div>
+
+
+
+            <div id="tab2" class="tabs-content ">
+
+                    <div class="title-separator">
+                        <span>Alterar dados da minha Conta</span>
+                    </div>
+                    <p class="paragraph">Preencha todos os <strong class="paragraph__mark" >campos</strong>,e clique em <strong class="paragraph__mark" >Salvar Alterações</strong></p>
+
+                    <div class="tabs-container">
+
+                        <form action="">
+    
+                            <div class="data">
+                                <label class="data__label" for="">Nome Completo</label>
+                                <input class="data__input" type="text" placeholder="Nome Completo">
+                            </div>
+            
+                            <div class="data">
+                                <label class="data__label" for="">Endereço</label>
+                                <input class="data__input" type="text" placeholder="Endereço">
+                            </div>
+            
+                            <div class="data">
+                                <label class="data__label" for="">CEP</label>
+                                <input class="data__input" type="text" placeholder="Estado">
+                            </div>
+
+                            <div class="data">
+                                <label class="data__label" for="">Cidade</label>
+                                <input class="data__input" type="text" placeholder="Cidade">
+                            </div>
+            
+                            <div class="data">
+                                <label class="data__label" for="">Estado</label>
+                                <input class="data__input" type="text" placeholder="Estado">
+                            </div>
+            
+                            <div class="data">
+                                <label class="data__label" for="">Selecione o Pais</label>
+                                <select  class="data__input" name="" id="">
+                                    <option value="">Brazil</option>
+                                </select>
+                            </div>
+            
+                            <div class="data">
+                                <label class="data__label" for="">Telefone 1</label>
+                                <input class="data__input" type="text" placeholder="Telefone 1">
+                            </div>
+            
+                            <div class="data">
+                                <label class="data__label" for="">Telefone 2</label>
+                                <input class="data__input" type="text" placeholder="Telefone 2">
+                            </div>
+            
+                
+                            <div class="data">
+                                <button class="btn btn--blue btn--md btn--outline">Salvar Alterações</button>
+                                <button class="btn btn--red btn--md btn--outline">Cancelar</button>
+                            </div>
+                        
+                        </form>
+                    </div>
+            </div>
+            <div id="tab3" class="tabs-content">
+
+                    <div class="title-separator">
+                            <span>Alterar Informações de Login</span>
+                        </div>
+                        <p class="paragraph">Preencha todos os <strong class="paragraph__mark" >campos</strong>,e clique em <strong class="paragraph__mark" >Salvar Alterações</strong></p>
+                <div class="tabs-container">
+                        <form action="">
+
+                                <div class="data">
+                                    <label class="data__label">Username</label>
+                                    <input class="data__input" type="text" placeholder="Username">
+                                </div>
+                
+                                <div class="data">
+                                    <label class="data__label" for="">Senha Atual</label>
+                                    <input class="data__input" type="password" placeholder="Digite sua senha">
+                                </div>
+                
+                                <div class="data">
+                                    <label class="data__label" for="">Nova Senha</label>
+                                    <input class="data__input" type="password"  placeholder="Digite sua nova senha">
+                                </div>
+                
+                
+                                <div class="data">
+                                    <label class="data__label" for="">Repetir Nova Senha</label>
+                                    <input class="data__input" type="password" placeholder="Digite novamente sua nova senha">
+                                </div>
+                
+                                
+                
+                                <div class="data">
+                                        <button class="btn btn--blue btn--md btn--outline">Salvar Alterações</button>
+                                        <button class="btn btn--red btn--md btn--outline">Cancelar</button>
+                                    </div>
+                             
+                            </form>
+
+                 </div>
+            </div>
+           
+
+        </main>
+
+
+    </div>
+
+
+    <script>
+        const tabButtons = document.querySelectorAll("[data-target]");
+
+        tabButtons.forEach(tabButton => {
+ 
+            tabButton.addEventListener('click', () => {
+                showTab(tabButton);
+            })
+        })
+   
+
+        function showTab(tabButton) {
+            penTabsWhite(tabButtons);
+            hideAllTabs('tab');
+
+          
+            tabButton.classList.toggle('active');
+
+            const tabId = tabButton.dataset.target;
+            const tab = document.getElementById(tabId);
+
+            tab.classList.add('active')
+        }
+
+        function hideAllTabs(startsWith) {
+           document.querySelectorAll(`[id^=${startsWith}]`)
+           .forEach(item => { item.classList.remove('active'); })
+        }
+
+        function penTabsWhite(tabs) {
+            tabs.forEach(tab => { 
+
+                tab.classList.remove('active');
+             } );
+        }
+
+
+    </script>
    
 
     <script src="https://kit.fontawesome.com/16fae2e2ed.js"></script>
