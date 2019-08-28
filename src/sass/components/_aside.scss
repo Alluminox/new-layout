@@ -1,33 +1,21 @@
 .aside {
-    // width: 35rem;
-    width: 28.5rem;
+    width: 20rem;
     background-color: $white;
-
     position: fixed;
     height: 100%;
     top: 0;
-    right: 0; 
- 
-
+    right: 0;
+    transform: translateX(100%);
     overflow: auto;
-
-
-    @media(min-width: 1024px) {
-        top: 8rem;    
-        height: auto;
-    }
-    border-left: 1px solid #ffffff;
+    border-left: 1px solid $white;
   
 }
 
 .aside__header  {
     font-size: 1.8rem;
-    color: #302f2f;
+    color: $dark-grey-1;
     font-weight: 400;
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid $light-grey-3;
     display: inline-block;
     padding: 1.85rem 2.45rem;
-    /* margin: 2rem; */
-
-
 }

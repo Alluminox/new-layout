@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>New Site Layout!</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Titillium+Web:300,400,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Titillium+Web:300,400,600&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet"> -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -18,7 +20,7 @@
         </span>
     </div>
   
-    <div class="layout layout--mobile ">
+    <div class="layout ">
             <aside class="aside layout__aside ">
                 <span class="aside__header">Consulte o Guia</span>
                 <ul class="list">
@@ -50,7 +52,7 @@
             </aside>    
 
             <main class="layout__content" id="home">
-                <header class="header">
+                <header class="header hero-container">
                     <div class="container">
                         <a href="#" class="header__logo">
                             <img src="images/logo.png" alt="Logo da Alluminox">
@@ -74,23 +76,22 @@
             
                 </header>
                 
-                <section class="banner">
+                <section class="banner ">
 
-                   <video class="banner__view" autoplay loop muted >
+                    <video class="banner__view" autoplay loop muted >
+                    <source src="videos/city-night.mp4" type="video/mp4" >
+                    </video>
+                    <div class="banner__content hero-container">
+                        <h1 class="banner__title">Portas, Janelas, e muito mais...</h1>
+                        <h2 class="banner__subtitle">Para o sua casa ou seu negócio</h2>
+                        <p class="banner__paragraph">O seu orçamento é tratado por nós com profissionalismo e seriedade por nossa equipe!</p>   
+                        <a href="/forms/send-profile" class="banner__btn ">Fazer Orçamento</a>
 
-                    <source src="videos/Metropole - 2337.mp4" type="video/mp4" >
-                   </video>
-                    <div class="banner__content">
-                        <span class="banner__intro">Um de muitos meios para nós, realizarmos seu sonho!</span>
-                        <h1 class="banner__title">Venha conheçer os nossos produto &</h1>
-                        <h2 class="banner__subtitle">Faça parte dessa solução.</h2>
-                        <p class="banner__paragraph">O seu orçamento é tratado por nós com profissionalismo e seriedade por nossa equipe!</p>
-                        <p class="banner__paragraph">Envie-nos o seu orçamento e entraremos em contato!</p>
-             
-                        <a href="/forms/send-profile" class="banner__btn btn btn--blue btn--outline btn--circle ">Fazer Orçamento</a>
-                        <a href="#more" class="banner__btn btn btn--circle btn--border ">Saiba Mais</a>
-                     
-        
+
+                        <a href="#" class="banner__more">
+                            <span>Clique para saber mais</span>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
                     </div>
                 </section>
             
@@ -99,10 +100,7 @@
 
                         <div class="title">
                             <h2 class="title__primary">Nossos Serviços</h2>
-                            <p class="title__secondary">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga doloremque obcaecati quod blanditiis explicabo? Vero itaque suscipit repellat officiis illo.
-
-                            </p>
+                            <p class="title__secondary">Veja algumas qualidades de adquirir Produto Alluminox!</p>
                         </div>
 
 
@@ -110,35 +108,39 @@
                             <span class="attribute__icon">
                                     <i class="fas fa-heart"></i>
                             </span>
-                            <h2 class="secondary-text">Sleek Design</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum repellendus harum voluptates ipsa corporis iusto.</p>
+                            <h2 class="secondary-text">Qualidade</h2>
+                            <p>Nós da Alluminox, entregamos produtos de qualidade, com durabilidade em sua vida util , proporcionando confiablidade 
+                                aos nossos clientes.</p>
                         </article>
                         <article class="attribute" data-anime="top">
                             <span class="attribute__icon">
                                     <i class="fas fa-award"></i>
                             </span>
-                            <h2 class="secondary-text secondary-text--bordered">Sleek Design</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum repellendus harum voluptates ipsa corporis iusto.</p>
+                            <h2 class="secondary-text secondary-text--bordered">Certificados</h2>
+                            <p>Somos certificados pela <a href="https://www.worldquality.org/">World Quality Commitment</a>,
+                            todos nossos produtos passaram por avaliação e concorrência de qualidade</a></p>
                         </article>
     
                         <article class="attribute" data-anime="right">
                             <span class="attribute__icon">
                                     <i class="fas fa-user-shield"></i>
                             </span>
-                            <h2 class="secondary-text">Sleek Design</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum repellendus harum voluptates ipsa corporis iusto.</p>
+                            <h2 class="secondary-text">Segurança</h2>
+                            <p>Todo projeto desde a medição, produção e instalação são tarefas executadas
+                                por profissionais qualificados, entregando no final um produto 100% confiavel
+                                para sua residência ou comércio!
+                            </p>
                         </article>
                      </div>
                 </section>
 
-                <section class="about" id="about" data-anime="left">
+                <section class="about" id="about" >
                     <div class="container">
                         
                         <div class="title" >
                             <h2 class="title__primary">Sobre Nós</h2>
                             <p class="title__secondary">
-                                Veja nosso vídeo institucional, e saiba mais sobre nossa empresa, nossa equipe e principalmente
-                                nosso objetivo e nossa promessa como você que está nos avaliando!
+                                Saiba um pouco da história de nossa empresa!
                             </p>
                         </div>
 
@@ -148,12 +150,11 @@
 
                             
                             <div class="about__explain">
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus totam consectetur id, velit ratione 
-                                    sapiente magni nulla, veritatis et natus ab modi quisquam pariatur corporis exercitationem ut doloremque 
-                                    harum quae alias sunt, itaque esse magnam similique eos. Necessitatibus, deserunt aspernatur ducimus, officia
-                                     dolore a fuga nulla optio amet, odio distinctio!
-                                </p>
+                                <p>Fabricante de Esquadrias de Alumínio Especiais desde 1971 desenvolvendo as mais diversas soluções para a construção civil no quesito Fachadas Pele de Vidro e Moveis Planejados rm Vidro e Aluminio</p>
+                                
+                                <p>A Alluminox é uma empresa voltada para a construção civil focada em um atendimento diferenciado e exclusivo no mercado atuando hoje com fornecedores de insumos </p>
+
+                     
                             </div>
 
                             <div class="about__shape">
@@ -170,10 +171,10 @@
                 </section>
 
                 <!-- @projects -->
-                <section class="projects" id="projects" data-anime="left">
+                <section class="projects" id="projects" >
                     <div class="container">
 
-                        <div class="title title--dark" >
+                        <div class="title title--light" >
                             <h2 class="title__primary">Projetos em Andamento</h2>
                             <p class="title__secondary">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga doloremque obcaecati quod blanditiis explicabo? Vero itaque suscipit repellat officiis illo.

@@ -3,14 +3,14 @@
     // background-color: #2c2e35;
     // min-height: 80rem;
     // margin-top: -10rem;
-    margin-top: -35rem;
+    // margin-top: -35rem;
     // background-color: #efefef;
-    z-index: 40;
-
     
     position: relative;
     z-index: 40;
     flex-direction: column;
+
+    padding: 7rem 0;
     object-fit: cover;
 
     &:after {
@@ -21,7 +21,8 @@
         top: 0;
         clip-path: polygon(100% 0, 100% 100%, 63% 94%, 32% 67%, 0% 75%, 0 0);
         // background-color: rgb(109, 95, 238);
-        background-color: #535afd;
+        // background-color: #535afd;
+        background-color: #222222;
         z-index: 800;
 
         // polygon(100% 0, 100% 100%, 61% 94%, 34% 64%, 0% 75%, 0 0)
@@ -36,7 +37,7 @@
 
 .projects .container {
     z-index: 900;
-    padding: 40rem 0 5rem 0;
+    // padding: 40rem 0 5rem 0;
     position: relative;
     // background-color: red;
     text-align: center;

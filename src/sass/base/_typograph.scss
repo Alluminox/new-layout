@@ -18,13 +18,15 @@
     text-align: center;
     padding: 0 2rem;
     margin-bottom: 4rem;
+
+
     
     @media(min-width: #{$mq-tablet}) { 
-        max-width: 80rem;
-        margin-bottom: 7rem;
+     
+        margin-bottom: 15rem;
     }
 
-    &--dark {
+    &--light {
 
         .title__primary { color: $white; }
         .title__secondary { color: $white; }
@@ -32,18 +34,20 @@
 
 
     &__primary { 
-        font-size: 3.2rem;
-        margin-bottom: 2.5rem;
+        font-size: 3.4rem;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+        display: block;
         color: #3d597a;
 
     }   
 
     &__secondary {
-        font-size: 1.35rem;
+        font-size: 1.52rem;
         font-weight: 500;
         line-height: 1.9;
         color: #3d597a;
-
+        display: block;
         text-align: justify;
         @media(min-width: 768px) { 
             text-align: center;

@@ -4,7 +4,7 @@
     align-items: center;
     flex-wrap: wrap;
     font-size: 1rem;
-    padding: 2rem;
+    // padding: 2rem;
   
     z-index: 1000;
     // background-color: rgba(0,0,0,.2);
@@ -21,18 +21,28 @@
     @media(min-width: 768px) { 
         position: absolute;
         background-color: transparent;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.13);
-        padding: 1rem 2rem;
+
     }
     
+}
+
+.header.hero-container {
+
+
+    @media (min-width: 700px) {
+        padding: 4rem 6rem;
+    }
 }
 
 .header .container {
     display: flex;
     align-items: center;
     flex-wrap: inherit;
-
+    margin: 0;
+    justify-content: space-between;
     // flex-direction: column;
+
+    max-width: 100%;
 }
 
 .header__content {

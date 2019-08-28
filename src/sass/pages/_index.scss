@@ -1,15 +1,16 @@
 .layout--mobile {
     transition: all .2s;
+    overflow: auto;
 }
 .layout--mobile .layout__content {
-    width: calc(100%);
+    width: calc(100% - 20rem);
     transition: all .2s;
 }
 
 
 .layout--mobile .layout__aside {
     position: fixed;   
-    transform: translateX(28.5rem);
+    transform: translateX(0);
     box-shadow: none;
 }
 
