@@ -10,6 +10,12 @@ class IndexController {
         activeMenuResponsive(".mobile-btn");
         utilitites.suavityScroll();
         utilitites.animateScroll();
+        
+        
+        const modal = utilitites.modal('modal-project');
+
+
+        modal.start();
     }
 
 }

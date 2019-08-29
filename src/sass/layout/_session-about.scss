@@ -1,22 +1,25 @@
 .about {
-    background-color: #222222;
+    background-color: #f1f1f1;
     position: relative;
-    // z-index: 50;
     flex-direction: column;
+    padding: 5rem 2rem;
+
+
     
-    padding: 0 0 20rem 0;
-
-
-    &:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: $white;
-        z-index: 52;
-        clip-path: polygon(100% 0, 100% 84%, 73% 81%, 44% 96%, 21% 86%, 0 98%, 0 0);
+    @media(min-width: #{$mq-tablet}) { 
+        background-color: #222222;
+        padding: 0 0 20rem 0;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $white;
+            z-index: 52;
+            clip-path: polygon(100% 0, 100% 84%, 73% 81%, 44% 96%, 21% 86%, 0 98%, 0 0);
+        }
     }
 }
 
@@ -30,52 +33,31 @@
     z-index: 54;
 }
 
-
-.about .container {
-
-}
-
-
 .about .title {
- 
     padding: 0;
-
-    
 }
 
 
 .about__wrapper {
-
-
     width: 100%;
     display: flex;
-
     flex-direction: row;
-    // padding: 0 2rem;
     flex-wrap: wrap;
+    align-items: flex-start;
+
 
     @media(min-width: 768px) { 
         padding: 5rem 2rem;
     }
-
-
-    // @media(min-width: 1024px) { 
-    //     padding: 5rem 0;
-    // }
 }
 
 .about__explain {
     text-align: justify;
-
-    // color: #fff;
-    // background-color: #fff;
     width: 100%;
- 
     
     
     @media(min-width: 480px) { 
-        margin-right: 4rem;
-        max-width: calc(70% - 4rem);
+        max-width: calc(60% );
         margin-bottom: 0;
     }
 
@@ -86,8 +68,10 @@
     p {
         line-height: 1.8;
         font-size: 1.48rem;
+        margin-bottom: 1rem;
 
-        &::first-letter {
+
+        &:first-child::first-letter {
             font-size: 2rem;
             font-weight: 400;
         }
@@ -97,21 +81,18 @@
 
 .about__shape {
     width: 100%;
- 
-    // flex-grow: 2;
-    background-color: #fff;
     order: -1;
     margin-bottom: 2rem;
 
 
     @media(min-width: 480px) { 
-        order: 1;
+        padding: 0 2rem;
         margin-bottom: 0;
-        max-width: 30%;
+        max-width: 40%;
     }
 
     @media(min-width: 768px) { 
-
+        margin-right: auto;
     }
 
     img {

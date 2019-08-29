@@ -18,22 +18,62 @@ let utilitites = {
        
     },
 
-
     animateScroll: () => {
-
         const all = document.querySelectorAll("[data-anime]");
-        const animationClass = "animate";
+        animeWindowScroll(all, "animate");
+    },
 
-        animeWindowScroll(all);
+
+    modal: (elementId) => {
+        const modal = document.getElementById(elementId);
+
+        if(modal) {
+            const actions =  {
+                
+                start: () => {
+                    if(localStorage.getItem("closeModal") != elementId) {
+
+                        actions.show();
+                        actions.listenHide();
+                    }
+                },
+
+                show: () => {
+
+                   
+                        
+                        modal.classList.add('show');
+                },
+
+                listenHide: () => {
+
+                    modal.addEventListener('click', (event) => {
+                   
+                        if( (event.target.id == modal.id ) || 
+                            event.target.classList.contains("close-modal")) {
+
+
+
+                            modal.classList.toggle('show');
+                            // localStorage.setItem('closeModal', elementId);
+                        }
+                    })
+
+
+
+                }
+
+            }
+
+            return actions;
+        }
+
 
 
     }
 
 
 }
-
-
-
 
 
 function getScrollTopHref(element) {
@@ -53,8 +93,6 @@ function scrollToPosition(to) {
 
 }
 
-
-
 // Evita multiplos clicks
 function debouce(callback, wait) {
     let timer = null;
@@ -65,9 +103,7 @@ function debouce(callback, wait) {
 
 }
 
-
-
-function animeWindowScroll(elements) {
+function animeWindowScroll(elements, animationClass = "animate") {
     window.addEventListener('scroll',  debouce(function() {
 
         // distancia da barra de scroll e o topo da página  + 3/4 da altura do monitor
@@ -81,10 +117,10 @@ function animeWindowScroll(elements) {
             // Se meu windowTop(Scroll em Relação ao topo da Janela )
             // for maior que o elemento(data-anime) em relação ao topo , adiciona a classe
             if(windowTop > elementTop) {
-                element.classList.add('animate');
+                element.classList.add(animationClass);
 
             }else {
-                element.classList.toggle('animate');
+                element.classList.toggle(animationClass);
             }
 
 

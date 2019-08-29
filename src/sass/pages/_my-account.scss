@@ -25,6 +25,11 @@
     margin: 0;
     padding: 0;
     width: 100%;
+
+
+    &--dark {
+        color: #444;
+    }
 }
 
 .text-secondary {
@@ -32,6 +37,11 @@
     color: #fff;
     font-size: 1.87rem;
     font-weight: 400;
+
+    
+    &--dark {
+        color: #444;
+    }
 }
 
 

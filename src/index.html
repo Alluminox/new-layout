@@ -5,626 +5,612 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>New Site Layout!</title>
-    <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Titillium+Web:300,400,600&display=swap" rel="stylesheet"> -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet"> -->
-
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 
-
+    <!-- @@Loading Page-->
     <div class="loader-wrapper">
         <span class="loading">
             <span class="loading__inner"></span>
         </span>
     </div>
   
+     <!-- @@Layout Wrapper-->
     <div class="layout ">
-            <aside class="aside layout__aside ">
-                <span class="aside__header">Consulte o Guia</span>
-                <ul class="list">
-                    <li class="list__item"><a href="#home" class="list__link"><i class="fas  fa-angle-right"></i> Página Inicial</a></li>
-                    <li class="list__item"><a href="#products" class="list__link"><i class="fas  fa-angle-right"></i>Produtos</a></li>
-                    <li class="list__item"><a href="#projects" class="list__link"><i class="fas  fa-angle-right"></i>Projeto</a></li>
-                    <li class="list__item"><a href="/working-us" class="list__link"><i class="fas  fa-angle-right"></i>Trabalhe Conosco</a></li>
-                    <li class="list__item"><a href="/forms/send-profile" class="list__link"><i class="fas  fa-angle-right"></i>Faça um Orçamento</a></li>
-                    <li class="list__item"><a href="#providers" class="list__link"><i class="fas  fa-angle-right"></i>Fornecedores</a></li>
-                    <li class="list__item"><a href="#about" class="list__link"><i class="fas  fa-angle-right"></i>Sobre</a></li>
-                    <li class="list__item"><a href="#contact" class="list__link"><i class="fas  fa-angle-right"></i>Contato</a></li>
-                </ul>
 
-                <div class="social">
-                    <span class="social__title">Siga-nos na redes sociais</span>
+        <!-- @@Aside Menu -->
+        <aside class="aside layout__aside ">
+            <span class="aside__header">Menu</span>
+            <ul class="list">
+                <li class="list__item"><a href="#home" class="list__link"><i class="fas  fa-angle-right"></i> Página Inicial</a></li>
+                <li class="list__item"><a href="#products" class="list__link"><i class="fas  fa-angle-right"></i>Produtos</a></li>
+                <li class="list__item"><a href="#projects" class="list__link"><i class="fas  fa-angle-right"></i>Projeto</a></li>
+                <li class="list__item"><a href="/working-us" class="list__link"><i class="fas  fa-angle-right"></i>Trabalhe Conosco</a></li>
+                <li class="list__item"><a href="/forms/send-profile" class="list__link"><i class="fas  fa-angle-right"></i>Faça um Orçamento</a></li>
+                <li class="list__item"><a href="#providers" class="list__link"><i class="fas  fa-angle-right"></i>Fornecedores</a></li>
+                <li class="list__item"><a href="#about" class="list__link"><i class="fas  fa-angle-right"></i>Sobre</a></li>
+                <li class="list__item"><a href="#contact" class="list__link"><i class="fas  fa-angle-right"></i>Contato</a></li>
+            </ul>
+            <div class="social">
+                <span class="social__title">Siga-nos na redes sociais</span>
+                <a class="social__item social__item--facebook">
+                    <i class=" social__item-icon fab fa-facebook-f"></i>
+                </a>
+                <a class="social__item social__item--google">
+                        <i class=" social__item-icon fab fa-google"></i>
+                </a>
+                <a class="social__item social__item--twitter">
+                    <i class=" social__item-icon fab fa-twitter"></i>
+                </a>
+            </div>
+        </aside>    
 
-                    <a class="social__item social__item--facebook">
-                        <i class=" social__item-icon fab fa-facebook-f"></i>
+        <!-- @@Layout Wrapper -->
+        <main class="layout__content" id="home">
+
+              <!-- @@Header Bar -->
+            <header class="header hero-container">
+                <div class="container">
+                    <a href="#" class="header__logo">
+                        <img src="images/logo.png" alt="Logo da Alluminox">
                     </a>
-
-                    <a class="social__item social__item--google">
-                            <i class=" social__item-icon fab fa-google"></i>
-                    </a>
-
-                    <a class="social__item social__item--twitter">
-                        <i class=" social__item-icon fab fa-twitter"></i>
+                    <div class="header__content header__item-right">
+                        <form action="#" class="search">
+                            <input type="text" placeholder="Pesquisa">
+                            <button type="submit">
+                                    <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                        <button class="btn-login">Minha Conta<i class="fas fa-lock"></i></button>
+                        <a href="/login" class="mobile-btn">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            
+            <!-- @@Banner -->
+            <section class="banner">
+                <video class="banner__view" autoplay loop muted >
+                <source src="videos/city-night.mp4" type="video/mp4" >
+                </video>
+                <div class="banner__content hero-container">
+                    <h1 class="banner__title">Portas, Janelas, e muito mais...</h1>
+                    <h2 class="banner__subtitle">Para o sua casa ou seu negócio</h2>
+                    <p class="banner__paragraph">O seu orçamento é tratado por nós com profissionalismo e seriedade por nossa equipe!</p>   
+                    <a href="/forms/send-profile" class="banner__btn ">Fazer Orçamento</a>
+                    <a href="#" class="banner__more">
+                        <span>Clique para saber mais</span>
+                        <i class="fa fa-angle-right"></i>
                     </a>
                 </div>
-            </aside>    
-
-            <main class="layout__content" id="home">
-                <header class="header hero-container">
-                    <div class="container">
-                        <a href="#" class="header__logo">
-                            <img src="images/logo.png" alt="Logo da Alluminox">
-                        </a>
-                        <div class="header__content header__item-right">
-                            
-                            <form action="#" class="search">
-                                <input type="text" placeholder="Pesquisa">
-                                <button type="submit">
-                                        <i class="fas fa-search"></i>
-                                </button>
-                            </form>
-
-                            <button class="btn-login">Minha Conta<i class="fas fa-lock"></i></button>
-                            <a href="/login" class="mobile-btn">
-                                <i class="fas fa-bars"></i>
-                            </a>
- 
-                        </div>
-                    </div>
-            
-                </header>
-                
-                <section class="banner ">
-
-                    <video class="banner__view" autoplay loop muted >
-                    <source src="videos/city-night.mp4" type="video/mp4" >
-                    </video>
-                    <div class="banner__content hero-container">
-                        <h1 class="banner__title">Portas, Janelas, e muito mais...</h1>
-                        <h2 class="banner__subtitle">Para o sua casa ou seu negócio</h2>
-                        <p class="banner__paragraph">O seu orçamento é tratado por nós com profissionalismo e seriedade por nossa equipe!</p>   
-                        <a href="/forms/send-profile" class="banner__btn ">Fazer Orçamento</a>
-
-
-                        <a href="#" class="banner__more">
-                            <span>Clique para saber mais</span>
-                            <i class="fa fa-angle-right"></i>
-                        </a>
-                    </div>
-                </section>
-            
-                <section class="attributes" id="more">
-                    <div class="container">
-
-                        <div class="title">
-                            <h2 class="title__primary">Nossos Serviços</h2>
-                            <p class="title__secondary">Veja algumas qualidades de adquirir Produto Alluminox!</p>
-                        </div>
-
-
-                        <article class="attribute" data-anime="left">
-                            <span class="attribute__icon">
-                                    <i class="fas fa-heart"></i>
-                            </span>
-                            <h2 class="secondary-text">Qualidade</h2>
-                            <p>Nós da Alluminox, entregamos produtos de qualidade, com durabilidade em sua vida util , proporcionando confiablidade 
-                                aos nossos clientes.</p>
-                        </article>
-                        <article class="attribute" data-anime="top">
-                            <span class="attribute__icon">
-                                    <i class="fas fa-award"></i>
-                            </span>
-                            <h2 class="secondary-text secondary-text--bordered">Certificados</h2>
-                            <p>Somos certificados pela <a href="https://www.worldquality.org/">World Quality Commitment</a>,
-                            todos nossos produtos passaram por avaliação e concorrência de qualidade</a></p>
-                        </article>
-    
-                        <article class="attribute" data-anime="right">
-                            <span class="attribute__icon">
-                                    <i class="fas fa-user-shield"></i>
-                            </span>
-                            <h2 class="secondary-text">Segurança</h2>
-                            <p>Todo projeto desde a medição, produção e instalação são tarefas executadas
-                                por profissionais qualificados, entregando no final um produto 100% confiavel
-                                para sua residência ou comércio!
-                            </p>
-                        </article>
-                     </div>
-                </section>
-
-                <section class="about" id="about" >
-                    <div class="container">
-                        
-                        <div class="title" >
-                            <h2 class="title__primary">Sobre Nós</h2>
-                            <p class="title__secondary">
-                                Saiba um pouco da história de nossa empresa!
-                            </p>
-                        </div>
-
-
-
-                        <div class="about__wrapper">
-
-                            
-                            <div class="about__explain">
-                                <p>Fabricante de Esquadrias de Alumínio Especiais desde 1971 desenvolvendo as mais diversas soluções para a construção civil no quesito Fachadas Pele de Vidro e Moveis Planejados rm Vidro e Aluminio</p>
-                                
-                                <p>A Alluminox é uma empresa voltada para a construção civil focada em um atendimento diferenciado e exclusivo no mercado atuando hoje com fornecedores de insumos </p>
-
-                     
-                            </div>
-
-                            <div class="about__shape">
-                                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/GtBAl5-ShwI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-                                <img src="images/about.jpg" alt="">
-                            </div>
-                        </div>
-
-
-                      
-
-
-                    </div>
-                </section>
-
-                <!-- @projects -->
-                <section class="projects" id="projects" >
-                    <div class="container">
-
-                        <div class="title title--light" >
-                            <h2 class="title__primary">Projetos em Andamento</h2>
-                            <p class="title__secondary">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga doloremque obcaecati quod blanditiis explicabo? Vero itaque suscipit repellat officiis illo.
-
-                            </p>
-                        </div>
-
-
-                        <article class="projects__wrapper" >
-
-                                <div class="project">
-                                    <figure class="project__image">
-                                        <img src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="Project">
-
-                                        <div class="progress project__progress">
-                                                <div class="progress-bar">
-                                                    <div class="progress-bar__pipe"></div>
-                                                </div>
-                                                <span class="progress__bar-percent">Progress 70%</span>
-                                            </div>
-                                    </figure>
+            </section>
         
-                                    <div class="project__content">
-                                        <span class="project__title">Tile of Project</span>
-                                        <span class="projeto__description">
-                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga quas placeat autem soluta 
-                                            id obcaecati doloribus commodi tempore totam suscipit nostrum, aut, illum ipsum, sit omnis 
-                                            dolorum non perspiciatis? Accusamus fugit aperiam adipisci beatae sit, culpa at aspernatur                                         
-                                        </span>
+            <!-- @@Attributos -->
+            <section class="attributes" id="more">
+                <div class="container">
 
-                                        <button class="project__btn btn btn--md btn--outline btn--blue-light btn--circle">Visualizar Detalhes</button>
-                                        <button class="project__btn btn btn--md btn--outline btn--circle btn--yellow">Obter</button>
+                    <div class="title">
+                        <h2 class="title__primary">Nossos Serviços</h2>
+                        <p class="title__secondary">Veja algumas qualidades de adquirir Produto Alluminox!</p>
+                    </div>
+
+                    <article class="attribute" data-anime="left">
+                        <span class="attribute__icon">
+                                <i class="fas fa-heart"></i>
+                        </span>
+                        <h2 class="secondary-text">Qualidade</h2>
+                        <p>Nós da Alluminox, entregamos produtos de qualidade, com durabilidade em sua vida util , proporcionando confiablidade 
+                            aos nossos clientes.</p>
+                    </article>
+
+                    <article class="attribute" data-anime="top">
+                        <span class="attribute__icon">
+                                <i class="fas fa-award"></i>
+                        </span>
+                        <h2 class="secondary-text secondary-text--bordered">Certificados</h2>
+                        <p>Somos certificados pela <a href="https://www.worldquality.org/">World Quality Commitment</a>,
+                        todos nossos produtos passaram por avaliação e concorrência de qualidade</a></p>
+                    </article>
+
+                    <article class="attribute" data-anime="right">
+                        <span class="attribute__icon">
+                                <i class="fas fa-user-shield"></i>
+                        </span>
+                        <h2 class="secondary-text">Segurança</h2>
+                        <p>Todo projeto desde a medição, produção e instalação são tarefas executadas
+                            por profissionais qualificados, entregando no final um produto 100% confiavel
+                            para sua residência ou comércio!
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- @@About -->
+            <section class="about" id="about" >
+                <div class="container">
+                    
+                    <div class="title" >
+                        <h2 class="title__primary">Sobre Nós</h2>
+                        <p class="title__secondary">
+                            Saiba um pouco da história de nossa empresa!
+                        </p>
+                    </div>
+
+                    <div class="about__wrapper">
+                        <div class="about__explain">
+                            <p>Fabricante de Esquadrias de Alumínio Especiais desde 1971 desenvolvendo as mais diversas soluções para a construção civil no quesito Fachadas Pele de Vidro e Moveis Planejados rm Vidro e Aluminio</p>
+                            <p>A Alluminox é uma empresa voltada para a construção civil focada em um atendimento diferenciado e exclusivo no mercado atuando hoje com fornecedores de insumos </p>
+                        </div>
+
+                        <div class="about__shape">
+                            <!-- <iframe src="https://www.youtube.com/embed/GtBAl5-ShwI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                            <img src="images/about-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- @@Projects -->
+            <section class="projects" id="projects" >
+                <div class="container">
+
+                    <div class="title title--light" >
+                        <h2 class="title__primary">Projetos em Andamento</h2>
+                        <p class="title__secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Fuga doloremque obcaecati quod blanditiis explicabo? Vero itaque suscipit repellat officiis illo.</p>
+                    </div>
+
+                    <article class="projects__wrapper" >
+
+                        <div class="project">
+                            <figure class="project__image">
+                                <img src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="Project">
+
+                                <div class="progress project__progress">
+                                        <div class="progress-bar">
+                                            <div class="progress-bar__pipe"></div>
+                                        </div>
+                                        <span class="progress__bar-percent">Progress 70%</span>
                                     </div>
+                            </figure>
+    
+                            <div class="project__content">
+                                <span class="project__title">Tile of Project</span>
+                                <span class="projeto__description">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga quas placeat autem soluta 
+                                    id obcaecati doloribus commodi tempore totam suscipit nostrum, aut, illum ipsum, sit omnis 
+                                    dolorum non perspiciatis? Accusamus fugit aperiam adipisci beatae sit, culpa at aspernatur                                         
+                                </span>
+
+                                <button class="project__btn btn btn--md btn--outline btn--blue-light btn--circle">Visualizar Detalhes</button>
+                                <button class="project__btn btn btn--md btn--outline btn--circle btn--yellow">Obter</button>
+                            </div>
+                        </div>
+
+                        <div class="project">
+                            <figure class="project__image">
+                                <img src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="Project">
+
+                                <div class="progress project__progress">
+                                        <div class="progress-bar">
+                                            <div class="progress-bar__pipe"></div>
+                                        </div>
+                                        <span class="progress__bar-percent">Progress 70%</span>
+                                    </div>
+                            </figure>
+    
+                            <div class="project__content">
+                                <span class="project__title">Tile of Project</span>
+                                <span class="projeto__description">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga quas placeat autem soluta 
+                                    id obcaecati doloribus commodi tempore totam suscipit nostrum, aut, illum ipsum, sit omnis 
+                                    dolorum non perspiciatis? Accusamus fugit aperiam adipisci beatae sit, culpa at aspernatur                                         
+                                </span>
+
+                                <button class="project__btn btn btn--md btn--outline btn--blue-light btn--circle">Visualizar Detalhes</button>
+                                <button class="project__btn btn btn--md btn--outline btn--circle btn--yellow">Obter</button>
+                            </div>
+                        </div>
+
+
+                        <div class="project">
+                            <figure class="project__image">
+                                <img src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="Project">
+
+                                <div class="progress project__progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-bar__pipe"></div>
+                                    </div>
+                                    <span class="progress__bar-percent">Progress 70%</span>
                                 </div>
-
-
-
-                                <div class="project">
-                                        <figure class="project__image">
-                                            <img src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="Project">
-    
-                                            <div class="progress project__progress">
-                                                    <div class="progress-bar">
-                                                        <div class="progress-bar__pipe"></div>
-                                                    </div>
-                                                    <span class="progress__bar-percent">Progress 70%</span>
-                                                </div>
-                                        </figure>
-            
-                                        <div class="project__content">
-                                            <span class="project__title">Tile of Project</span>
-                                            <span class="projeto__description">
-                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga quas placeat autem soluta 
-                                                id obcaecati doloribus commodi tempore totam suscipit nostrum, aut, illum ipsum, sit omnis 
-                                                dolorum non perspiciatis? Accusamus fugit aperiam adipisci beatae sit, culpa at aspernatur                                         
-                                            </span>
-    
-                                            <button class="project__btn btn btn--md btn--outline btn--blue-light btn--circle">Visualizar Detalhes</button>
-                                            <button class="project__btn btn btn--md btn--outline btn--circle btn--yellow">Obter</button>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="project">
-                                            <figure class="project__image">
-                                                <img src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="Project">
-        
-                                                <div class="progress project__progress">
-                                                        <div class="progress-bar">
-                                                            <div class="progress-bar__pipe"></div>
-                                                        </div>
-                                                        <span class="progress__bar-percent">Progress 70%</span>
-                                                    </div>
-                                            </figure>
-                
-                                            <div class="project__content">
-                                                <span class="project__title">Tile of Project</span>
-                                                <span class="projeto__description">
-                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga quas placeat autem soluta 
-                                                    id obcaecati doloribus commodi tempore totam suscipit nostrum, aut, illum ipsum, sit omnis 
-                                                    dolorum non perspiciatis? Accusamus fugit aperiam adipisci beatae sit, culpa at aspernatur                                         
-                                                </span>
-        
-                                                <button class="project__btn btn btn--md btn--outline btn--blue-light btn--circle">Visualizar Detalhes</button>
-                                                <button class="project__btn btn btn--md btn--outline btn--circle btn--yellow">Obter</button>
-                                            </div>
-                                        </div>
-
-                                
-                                        <div class="project">
-                                                <figure class="project__image">
-                                                    <img src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="Project">
-            
-                                                    <div class="progress project__progress">
-                                                            <div class="progress-bar">
-                                                                <div class="progress-bar__pipe"></div>
-                                                            </div>
-                                                            <span class="progress__bar-percent">Progress 70%</span>
-                                                        </div>
-                                                </figure>
-                    
-                                                <div class="project__content">
-                                                    <span class="project__title">Tile of Project</span>
-                                                    <span class="projeto__description">
-                                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga quas placeat autem soluta 
-                                                        id obcaecati doloribus commodi tempore totam suscipit nostrum, aut, illum ipsum, sit omnis 
-                                                        dolorum non perspiciatis? Accusamus fugit aperiam adipisci beatae sit, culpa at aspernatur                                         
-                                                    </span>
-            
-                                                    <button class="project__btn btn btn--md btn--outline btn--blue-light btn--circle">Visualizar Detalhes</button>
-                                                    <button class="project__btn btn btn--md btn--outline btn--circle btn--yellow">Obter</button>
-                                                </div>
-                                            </div>
-
-
-                                        <div class="project">
-                                            <figure class="project__image">
-                                                <img src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="Project">
-        
-                                                <div class="progress project__progress">
-                                                        <div class="progress-bar">
-                                                            <div class="progress-bar__pipe"></div>
-                                                        </div>
-                                                        <span class="progress__bar-percent">Progress 70%</span>
-                                                    </div>
-                                            </figure>
-                
-                                            <div class="project__content">
-                                                <span class="project__title">Tile of Project</span>
-                                                <span class="projeto__description">
-                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga quas placeat autem soluta 
-                                                    id obcaecati doloribus commodi tempore totam suscipit nostrum, aut, illum ipsum, sit omnis 
-                                                    dolorum non perspiciatis? Accusamus fugit aperiam adipisci beatae sit, culpa at aspernatur                                         
-                                                </span>
-        
-                                                <button class="project__btn btn btn--md btn--outline btn--blue-light btn--circle">Visualizar Detalhes</button>
-                                                <button class="project__btn btn btn--md btn--outline btn--circle btn--yellow">Obter</button>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="project">
-                                            <figure class="project__image">
-                                                <img src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="Project">
-        
-                                                <div class="progress project__progress">
-                                                        <div class="progress-bar">
-                                                            <div class="progress-bar__pipe"></div>
-                                                        </div>
-                                                        <span class="progress__bar-percent">Progress 70%</span>
-                                                    </div>
-                                            </figure>
-                
-                                            <div class="project__content">
-                                                <span class="project__title">Tile of Project</span>
-                                                <span class="projeto__description">
-                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga quas placeat autem soluta 
-                                                    id obcaecati doloribus commodi tempore totam suscipit nostrum, aut, illum ipsum, sit omnis 
-                                                    dolorum non perspiciatis? Accusamus fugit aperiam adipisci beatae sit, culpa at aspernatur                                         
-                                                </span>
-        
-                                                <button class="project__btn btn btn--md btn--outline btn--blue-light btn--circle">Visualizar Detalhes</button>
-                                                <button class="project__btn btn btn--md btn--outline btn--circle btn--yellow">Obter</button>
-                                            </div>
-                                        </div>
-        
-                        </article>
-
-                      
-                    </div>
-
-
-                  
-
-                </section>
-
-                <section class="gallery" id="products" data-anime="right">
-                    <div class="container">
-                            <article class="title" >
-                                <h2 class="title__primary" >Algum de Nossos Produtos</h2>
-                                <p class="title__secondary">
-                                    Veja abaixo alguns  de nossos produtos, portas, janelas , maxiar e muito mais...
-    
-                                </p>
-                            </article>
-
-
-                            <article class="gallery__wrapper" >
-
-                                <figure class="product">
-                                    <img class="product__image" src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="">
-                                </figure>
-
-                                <figure class="product">
-                                    <img class="product__image" src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="">
-                                </figure>
-
-                                <figure class="product">
-                                    <img class="product__image" src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="">
-                                </figure>
-
-
-                                <figure class="product">
-                                    <img class="product__image" src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="">
-                                </figure>
-
-                                <figure class="product">
-                                    <img class="product__image" src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="">
-                                </figure>
-
-                                <figure class="product">
-                                    <img class="product__image" src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="">
-                                </figure>
-
-                                <figure class="product">
-                                    <img class="product__image" src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="">
-                                </figure>
-
-                                <figure class="product">
-                                    <img class="product__image" src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="">
-                                </figure>
-
-
-                                <figure class="product">
-                                    <img class="product__image" src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="">
-                                </figure>
-
-                                <figure class="product">
-                                    <img class="product__image" src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="">
-                                </figure>
-
-                                <figure class="product">
-                                    <img class="product__image" src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="">
-                                </figure>
-
-
-                                <figure class="product">
-                                    <img class="product__image" src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="">
-                                </figure>
-
-                                <figure class="product">
-                                    <img class="product__image" src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="">
-                                </figure>
-
-
-                                <figure class="product">
-                                    <img class="product__image" src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="">
-                                </figure>
-
-                                <figure class="product">
-                                    <img class="product__image" src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="">
-                                </figure>
-
-               
-        
-
-                            </article>
-
-                            
-                            <button class=" mt-md btn btn--purple-light btn--circle btn--outline btn--blue-light">Faça um Orçamento!</button>
-
-                        
-
-                    </div>
-                </section>
-
-
-
-                <section class="providers" id="providers" data-anime="right">
-
-                    <div class="container">
-
-                        <article class="title">
-                            <h2 class="title__primary">Nossos Fornecedores</h2>
-                            <p class="title__secondary">
-                                Veja abaixo alguns  de nossos produtos, portas, janelas , maxiar e muito mais...
-
-                            </p>
-                        </article>
-
-
-
-                        <div class="providers__wrapper">
-                            
-                            <a href="#" class="provider">
-                                
-                                <figure class="provider__shape" >
-                                    <img class="provider__image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRytLSjm6nYeoTOYfinzd4HzfhHE-ooPsqbE1b1DgtOS2OFxBso" alt="">
-                                    <figcaption class="provider__name">
-                                        <span>Pado</span>
-                                    </figcaption>    
-                                </figure>
-                            </a>
-
-                            <a href="#" class="provider">
-                                
-                                <figure class="provider__shape" >
-                                    <img class="provider__image" src="https://4vector.com/i/free-vector-papaiz_032535_papaiz.png" alt="">
-                                    <figcaption class="provider__name">
-                                        <span>Pado</span>
-                                    </figcaption>    
-                                </figure>
-                            </a>
-
-
-                            <a href="#" class="provider">
-                        
-                                <figure class="provider__shape" >
-                                    <img class="provider__image" src="https://upload.wikimedia.org/wikipedia/commons/0/02/UDINESE-LOGO.png" alt="">
-                                    <figcaption class="provider__name">
-                                        <span>Pado</span>
-                                    </figcaption>    
-                                </figure>
-                            </a>
-
-                            <a href="#" class="provider">
-                                
-                                <figure class="provider__shape" >
-                                    <img class="provider__image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRytLSjm6nYeoTOYfinzd4HzfhHE-ooPsqbE1b1DgtOS2OFxBso" alt="">
-                                    <figcaption class="provider__name">
-                                        <span>Pado</span>
-                                    </figcaption>    
-                                </figure>
-                            </a>
-
-
-
-                            <a href="#" class="provider">
-                                
-                                <figure class="provider__shape" >
-                                    <img class="provider__image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRytLSjm6nYeoTOYfinzd4HzfhHE-ooPsqbE1b1DgtOS2OFxBso" alt="">
-                                    <figcaption class="provider__name">
-                                        <span>Pado</span>
-                                    </figcaption>    
-                                </figure>
-                            </a>                            
-
-                            <a href="#" class="provider">
-                                
-                                <figure class="provider__shape" >
-                                    <img class="provider__image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRytLSjm6nYeoTOYfinzd4HzfhHE-ooPsqbE1b1DgtOS2OFxBso" alt="">
-                                    <figcaption class="provider__name">
-                                        <span>Pado</span>
-                                    </figcaption>    
-                                </figure>
-                            </a>
-
-
-                            <a href="#" class="provider">
-                                
-                                <figure class="provider__shape" >
-                                    <img class="provider__image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRytLSjm6nYeoTOYfinzd4HzfhHE-ooPsqbE1b1DgtOS2OFxBso" alt="">
-                                    <figcaption class="provider__name">
-                                        <span>Pado</span>
-                                    </figcaption>    
-                                </figure>
-                            </a>                            
-
-                            <a href="#" class="provider">
-                                
-                                <figure class="provider__shape" >
-                                    <img class="provider__image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRytLSjm6nYeoTOYfinzd4HzfhHE-ooPsqbE1b1DgtOS2OFxBso" alt="">
-                                    <figcaption class="provider__name">
-                                        <span>Pado</span>
-                                    </figcaption>    
-                                </figure>
-                            </a>
-
-                        </div>
-
-
-                        
-                        
-                        <a class=" mt-md btn btn--purple-light btn--circle btn--outline btn--blue-light" href="/forms/send-provider">Seja um fornecedor!</a>
-                    </div>
-
-                </section>
-
-
-
-
-                <section class="newsletter">
-                    <div class="container">
-
-                            <div class="newsletter__wrapper">
-                                <!-- <span class="newsletter__icon">
-                                        <i class="material-icons">mail</i>
-                                </span> -->
-                                <h2 class="newsletter__title">Newsletter</h2>
-                                <h3 class="newsletter__subtitle">Se inscreva em nossas newsletter e receba nossas promoções!</h3>
-        
-                                <form action="" class="newsletter__form">
-        
-                                    <div class="newsletter__data">
-                                        <input type="text" placeholder="example@example.com.br">
-                                        <button>Assinar</button>
-                                    </div>
-                                </form>
+                            </figure>
+
+                            <div class="project__content">
+                                <span class="project__title">Tile of Project</span>
+                                <span class="projeto__description">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga quas placeat autem soluta 
+                                    id obcaecati doloribus commodi tempore totam suscipit nostrum, aut, illum ipsum, sit omnis 
+                                    dolorum non perspiciatis? Accusamus fugit aperiam adipisci beatae sit, culpa at aspernatur                                         
+                                </span>
+
+                                <button class="project__btn btn btn--md btn--outline btn--blue-light btn--circle">Visualizar Detalhes</button>
+                                <button class="project__btn btn btn--md btn--outline btn--circle btn--yellow">Obter</button>
                             </div>
-                    </div>       
-
-                </section>
-
-
-                <footer class="footer">
-                    <div class="container">
-                        <div class="footer__wrapper">
-                    
-                            <div class="footer__guide">
-                                <h1 class="footer__guide-title">Mapa da Página</h1>
-                                <ul class="footer__list">
-                                    <li><a href="#"><i class="fas fa-chevron-right"></i>Início</a></li>
-                                    <li><a href="#"><i class="fas fa-chevron-right"></i>Projetos</a></li>
-                                    <li><a href="#"><i class="fas fa-chevron-right"></i>Produtos</a></li>
-                                    <li><a href="#"><i class="fas fa-chevron-right"></i>Sobre Nós</a></li>
-                                    <li><a href="#"><i class="fas fa-chevron-right"></i>Contato</a></li>
-                                </ul>            
-                            </div>    
-
-                            <div class="footer__guide">
-                                <h1 class="footer__guide-title">Guia de Ajuda</h1>
-                                <ul class="footer__list">
-                                    <li><a href="#"><i class="fas fa-chevron-right"></i>Requisitar Orçamento</a></li>
-                                    <li><a href="#"><i class="fas fa-chevron-right"></i>Trabalhe Conosco</a></li>
-                                    <li><a href="#"><i class="fas fa-chevron-right"></i>Minha Conta</a></li>
-                                    <li><a href="#"><i class="fas fa-chevron-right"></i>Sobre Meus Dados</a></li>
-                                </ul>            
-                            </div>    
-
-                            <div class="footer__guide" id="contact">
-                                <h1 class="footer__guide-title">Entre em Contato</h1>
-                                <ul class="footer__list">
-                                    <li><a href="#"><i class="fab fa-whatsapp"></i>Whatsapp</a></li>
-                                    <li><a href="#"><i class="fas fa-headphones-alt"></i>0800-0011050</a></li>
-                                    <li><a href="#"><i class="fas fa-envelope"></i>atendimento@alluminox.com.br</a></li>
-                                </ul>            
-                            </div>    
                         </div>
-                    </div>
-                    
-                    <div class="footer__message">
-                        <span class="copyright">&copy; 2019 - Todos os Direitos Reservados | Desenvolvido 
-                                por Alluminox Indústria e Comércio LTDA | CNPJ: 000.000.000/0000.00</span>
-                    </div>
-                </footer>
 
-            </main>
+                    
+                        <div class="project">
+                            <figure class="project__image">
+                                <img src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="Project">
+
+                                <div class="progress project__progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-bar__pipe"></div>
+                                    </div>
+                                    <span class="progress__bar-percent">Progress 70%</span>
+                                </div>
+                            </figure>
+    
+                            <div class="project__content">
+                                <span class="project__title">Tile of Project</span>
+                                <span class="projeto__description">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga quas placeat autem soluta 
+                                    id obcaecati doloribus commodi tempore totam suscipit nostrum, aut, illum ipsum, sit omnis 
+                                    dolorum non perspiciatis? Accusamus fugit aperiam adipisci beatae sit, culpa at aspernatur                                         
+                                </span>
+
+                                <button class="project__btn btn btn--md btn--outline btn--blue-light btn--circle">Visualizar Detalhes</button>
+                                <button class="project__btn btn btn--md btn--outline btn--circle btn--yellow">Obter</button>
+                            </div>
+                        </div>
+
+
+                        <div class="project">
+                            <figure class="project__image">
+                                <img src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="Project">
+
+                                <div class="progress project__progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-bar__pipe"></div>
+                                    </div>
+                                    <span class="progress__bar-percent">Progress 70%</span>
+                                </div>
+                            </figure>
+
+                            <div class="project__content">
+                                <span class="project__title">Tile of Project</span>
+                                <span class="projeto__description">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga quas placeat autem soluta 
+                                    id obcaecati doloribus commodi tempore totam suscipit nostrum, aut, illum ipsum, sit omnis 
+                                    dolorum non perspiciatis? Accusamus fugit aperiam adipisci beatae sit, culpa at aspernatur                                         
+                                </span>
+
+                                <button class="project__btn btn btn--md btn--outline btn--blue-light btn--circle">Visualizar Detalhes</button>
+                                <button class="project__btn btn btn--md btn--outline btn--circle btn--yellow">Obter</button>
+                            </div>
+                        </div>
+
+
+                        <div class="project">
+                            <figure class="project__image">
+                                <img src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="Project">
+
+                                <div class="progress project__progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-bar__pipe"></div>
+                                    </div>
+                                    <span class="progress__bar-percent">Progress 70%</span>
+                                </div>
+                            </figure>
+
+                            <div class="project__content">
+                                <span class="project__title">Tile of Project</span>
+                                <span class="projeto__description">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga quas placeat autem soluta 
+                                    id obcaecati doloribus commodi tempore totam suscipit nostrum, aut, illum ipsum, sit omnis 
+                                    dolorum non perspiciatis? Accusamus fugit aperiam adipisci beatae sit, culpa at aspernatur                                         
+                                </span>
+
+                                <button class="project__btn btn btn--md btn--outline btn--blue-light btn--circle">Visualizar Detalhes</button>
+                                <button class="project__btn btn btn--md btn--outline btn--circle btn--yellow">Obter</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+           </section>
+
+
+           <!-- @@Galeria -->
+            <section class="gallery" id="products" data-anime="right">
+                <div class="container">
+                    <article class="title" >
+                        <h2 class="title__primary" >Algum de Nossos Produtos</h2>
+                        <p class="title__secondary">Veja abaixo alguns  de nossos produtos, portas,
+                        janelas , maxiar e muito mais...</p>
+                    </article>
+
+                    <article class="gallery__wrapper" >
+                        <figure class="product">
+                            <img class="product__image" src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="">
+                        </figure>
+
+                        <figure class="product">
+                            <img class="product__image" src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="">
+                        </figure>
+
+                        <figure class="product">
+                            <img class="product__image" src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="">
+                        </figure>
+
+                        <figure class="product">
+                            <img class="product__image" src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="">
+                        </figure>
+
+                        <figure class="product">
+                            <img class="product__image" src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="">
+                        </figure>
+
+                        <figure class="product">
+                            <img class="product__image" src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="">
+                        </figure>
+
+                        <figure class="product">
+                            <img class="product__image" src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="">
+                        </figure>
+
+                        <figure class="product">
+                            <img class="product__image" src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="">
+                        </figure>
+
+                        <figure class="product">
+                            <img class="product__image" src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="">
+                        </figure>
+
+                        <figure class="product">
+                            <img class="product__image" src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="">
+                        </figure>
+
+                        <figure class="product">
+                            <img class="product__image" src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="">
+                        </figure>
+
+                        <figure class="product">
+                            <img class="product__image" src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="">
+                        </figure>
+
+                        <figure class="product">
+                            <img class="product__image" src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="">
+                        </figure>
+
+                        <figure class="product">
+                            <img class="product__image" src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="">
+                        </figure>
+
+                        <figure class="product">
+                            <img class="product__image" src="https://iclinica.pl/wp-content/uploads/2019/05/wwdc2019.jpg" alt="">
+                        </figure>
+                    </article>
+
+                    <button class=" mt-md btn btn--purple-light btn--circle btn--outline btn--blue-light">Faça um Orçamento!</button>
+                </div>
+            </section>
+
+            <!-- @@Providers -->
+            <section class="providers" id="providers" data-anime="right">
+                <div class="container">
+
+                    <article class="title">
+                        <h2 class="title__primary">Nossos Fornecedores</h2>
+                        <p class="title__secondary">
+                            Veja abaixo alguns  de nossos produtos, portas, janelas , maxiar e muito mais...</p>
+                    </article>
+
+                    <div class="providers__wrapper">
+                        <a href="#" class="provider">
+                            <figure class="provider__shape" >
+                                <img class="provider__image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRytLSjm6nYeoTOYfinzd4HzfhHE-ooPsqbE1b1DgtOS2OFxBso" alt="">
+                                <figcaption class="provider__name">
+                                    <span>Pado</span>
+                                </figcaption>    
+                            </figure>
+                        </a>
+
+                        <a href="#" class="provider">
+                            <figure class="provider__shape" >
+                                <img class="provider__image" src="https://4vector.com/i/free-vector-papaiz_032535_papaiz.png" alt="">
+                                <figcaption class="provider__name">
+                                    <span>Pado</span>
+                                </figcaption>    
+                            </figure>
+                        </a>
+
+                        <a href="#" class="provider">
+                            <figure class="provider__shape" >
+                                <img class="provider__image" src="https://upload.wikimedia.org/wikipedia/commons/0/02/UDINESE-LOGO.png" alt="">
+                                <figcaption class="provider__name">
+                                    <span>Pado</span>
+                                </figcaption>    
+                            </figure>
+                        </a>
+
+                        <a href="#" class="provider">
+                            <figure class="provider__shape" >
+                                <img class="provider__image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRytLSjm6nYeoTOYfinzd4HzfhHE-ooPsqbE1b1DgtOS2OFxBso" alt="">
+                                <figcaption class="provider__name">
+                                    <span>Pado</span>
+                                </figcaption>    
+                            </figure>
+                        </a>
+
+                        <a href="#" class="provider">
+                            <figure class="provider__shape" >
+                                <img class="provider__image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRytLSjm6nYeoTOYfinzd4HzfhHE-ooPsqbE1b1DgtOS2OFxBso" alt="">
+                                <figcaption class="provider__name">
+                                    <span>Pado</span>
+                                </figcaption>    
+                            </figure>
+                        </a>                            
+
+                        <a href="#" class="provider"> 
+                            <figure class="provider__shape" >
+                                <img class="provider__image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRytLSjm6nYeoTOYfinzd4HzfhHE-ooPsqbE1b1DgtOS2OFxBso" alt="">
+                                <figcaption class="provider__name">
+                                    <span>Pado</span>
+                                </figcaption>    
+                            </figure>
+                        </a>
+
+
+                        <a href="#" class="provider">
+                            <figure class="provider__shape" >
+                                <img class="provider__image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRytLSjm6nYeoTOYfinzd4HzfhHE-ooPsqbE1b1DgtOS2OFxBso" alt="">
+                                <figcaption class="provider__name">
+                                    <span>Pado</span>
+                                </figcaption>    
+                            </figure>
+                        </a>                            
+
+                        <a href="#" class="provider">
+                            <figure class="provider__shape" >
+                                <img class="provider__image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRytLSjm6nYeoTOYfinzd4HzfhHE-ooPsqbE1b1DgtOS2OFxBso" alt="">
+                                <figcaption class="provider__name">
+                                    <span>Pado</span>
+                                </figcaption>    
+                            </figure>
+                        </a>
+                    </div>
+
+                    <a class=" mt-md btn btn--purple-light btn--circle btn--outline btn--blue-light" href="/forms/send-provider">Seja um fornecedor!</a>
+                </div>
+            </section>
+
+            <!-- @@Newsletter -->
+            <section class="newsletter">
+                <div class="container">
+                    <div class="newsletter__wrapper">
+                        <h2 class="newsletter__title">Newsletter</h2>
+                        <h3 class="newsletter__subtitle">Se inscreva em nossas newsletter e receba nossas promoções!</h3>
+
+                        <form action="" class="newsletter__form">
+
+                            <div class="newsletter__data">
+                                <input type="text" placeholder="example@example.com.br">
+                                <button>Assinar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>       
+
+            </section>
+
+            <!-- @@Footer -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__wrapper">
+                
+                        <div class="footer__guide">
+                            <h1 class="footer__guide-title">Mapa da Página</h1>
+                            <ul class="footer__list">
+                                <li><a href="#"><i class="fas fa-chevron-right"></i>Início</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-right"></i>Projetos</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-right"></i>Produtos</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-right"></i>Sobre Nós</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-right"></i>Contato</a></li>
+                            </ul>            
+                        </div>    
+
+                        <div class="footer__guide">
+                            <h1 class="footer__guide-title">Guia de Ajuda</h1>
+                            <ul class="footer__list">
+                                <li><a href="#"><i class="fas fa-chevron-right"></i>Requisitar Orçamento</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-right"></i>Trabalhe Conosco</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-right"></i>Minha Conta</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-right"></i>Sobre Meus Dados</a></li>
+                            </ul>            
+                        </div>    
+
+                        <div class="footer__guide" id="contact">
+                            <h1 class="footer__guide-title">Entre em Contato</h1>
+                            <ul class="footer__list">
+                                <li><a href="#"><i class="fab fa-whatsapp"></i>Whatsapp</a></li>
+                                <li><a href="#"><i class="fas fa-headphones-alt"></i>0800-0011050</a></li>
+                                <li><a href="#"><i class="fas fa-envelope"></i>atendimento@alluminox.com.br</a></li>
+                            </ul>            
+                        </div>    
+                    </div>
+                </div>
+                
+                <div class="footer__message">
+                    <span class="copyright">&copy; 2019 - Todos os Direitos Reservados | Desenvolvido 
+                            por Alluminox Indústria e Comércio LTDA | CNPJ: 000.000.000/0000.00</span>
+                </div>
+            </footer>
+
+        </main>
     </div>
 
 
+     <!-- @Modal -->
+
+
+     <div class="modal" id="modal-project">
+
+        <div class="modal__wrapper modal__wrapper--fluid">
+          
+            <div class="modal__top">
+                <h3 class="modal__title">Projeto de Janelas</h3>
+                <i class="modal__close close-modal fas fa-times"></i>
+            </div>
+
+            <div class="modal__content ">
+                
+                <figure class="photo">
+                    <img src="images/working-us.jpg" alt="">
+                </figure>
+                <figure class="photo">
+                    <img src="images/working-us.jpg" alt="">
+                </figure>
+
+                <figure class="photo">
+                    <img src="images/working-us.jpg" alt="">
+                </figure>
+
+                <figure class="photo">
+                    <img src="images/working-us.jpg" alt="">
+                </figure>
+
+                <figure class="photo">
+                    <img src="images/working-us.jpg" alt="">
+                </figure>
+
+                <figure class="photo">
+                    <img src="images/working-us.jpg" alt="">
+                </figure>
+
+                <figure class="photo">
+                    <img src="images/working-us.jpg" alt="">
+                </figure>
+
+                <figure class="photo">
+                    <img src="images/working-us.jpg" alt="">
+                </figure>
+
+
+                <div class="photo-info">
+                    <h1 class="text-primary text-primary--dark">Projeto de Janelas</h1>
+                    <p class="text-secondary text-secondary--dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellendus delectus fugiat hic 
+                        iure dignissimos incidunt adipisci, mollitia illum excepturi officiis, tenetur unde harum alias. Eligendi dicta neque eaque doloribus.</p>
+                    
+                    <a href="#" class="btn btn--md btn--red">Pedir orçamento</a>
+                </div>
+            </div>
+
+        </div>
+
+     </div>
 
 
     <script src="https://kit.fontawesome.com/16fae2e2ed.js"></script>

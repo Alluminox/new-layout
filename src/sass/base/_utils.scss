@@ -47,3 +47,38 @@
     backface-visibility: visible;
     transform: translate3d(0,0,0);
 }
+
+
+
+
+.photo {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    max-width: 25%;
+    padding: 1rem;
+
+    img {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.photo-info {
+    padding: 1rem 1rem 0 1rem;
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    p {
+        margin-top: 1rem;
+        font-size: 1.72rem;
+    }
+
+    a {
+        margin-top: 1rem;
+    }
+}

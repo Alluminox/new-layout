@@ -5,32 +5,40 @@
     // margin-top: -10rem;
     // margin-top: -35rem;
     // background-color: #efefef;
-    
+    background-color: #222222;
     position: relative;
     z-index: 40;
     flex-direction: column;
 
-    padding: 7rem 0;
+    padding: 5rem 2rem;
     object-fit: cover;
 
-    &:after {
-        content: ''; 
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        clip-path: polygon(100% 0, 100% 100%, 63% 94%, 32% 67%, 0% 75%, 0 0);
-        // background-color: rgb(109, 95, 238);
-        // background-color: #535afd;
-        background-color: #222222;
-        z-index: 800;
 
-        // polygon(100% 0, 100% 100%, 61% 94%, 34% 64%, 0% 75%, 0 0)
-        // polygon(50% 0, 100% 14%, 99% 92%, 12% 100%, 0 73%, 0 40%)
-        //  polygon(100% 0, 100% 100%, 54% 100%, 26% 72%, 0% 80%, 0 0)
-
+    @media(min-width: #{$mq-tablet}) { 
+        background-color: $white;
+        padding: 7rem 0;
+        &:after {
+            content: ''; 
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            clip-path: polygon(100% 0, 100% 100%, 63% 94%, 32% 67%, 0% 75%, 0 0);
+            // background-color: rgb(109, 95, 238);
+            // background-color: #535afd;
+            background-color: #222222;
+            z-index: 800;
+    
+            // polygon(100% 0, 100% 100%, 61% 94%, 34% 64%, 0% 75%, 0 0)
+            // polygon(50% 0, 100% 14%, 99% 92%, 12% 100%, 0 73%, 0 40%)
+            //  polygon(100% 0, 100% 100%, 54% 100%, 26% 72%, 0% 80%, 0 0)
+    
+    
+        }
 
     }
+
+
 }
 
 
@@ -51,11 +59,6 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 
-    padding: 0 2rem;
-
-    @media(min-width: 480px) { 
-        padding: 0 ;
-    }
 }
 
 .project {
