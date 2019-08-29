@@ -9,51 +9,81 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="bg-light">
+<body class="dash-bg">
 
 
     <header class="dash-header">
 
-        <div class="wrapper">
-            <div>
-                <h1 class="text-primary">Minha Conta</h1>
-                <h2 class="text-secondary">Altere os dados de seu Cadastro!</h2>
-                <a href="#" class="btn btn--blue btn--xs">Sair da Minha Conta</a>
-            </div>
+    
+        <div class="dash-header__bar">
+            <div class="dash-header__wrapper">
+             
+                <a href="#" class="dash-logo">Dashboard</a>
 
-            <div class="user">
+                <div class="user">
+                    <figure class="user__photo">
+                        <img class="" src="images/about.jpg" alt="">
+                    </figure>
 
-            
+                    <div class="user__data">
+                        <span class="user__name">Alexandre</span>
+                        <a href="#" class="user__action">Logout</a>
+                    </div>
+                </div>
 
-                <figure class="user__photo">
-                    <img src="images/about.jpg" alt="">
-                    <figcaption>User</figcaption>  
-                </figure>
             </div>
         </div>
+    
+        <div class="dash-header__bar">
+            <div class="dash-header__wrapper">
+                <form class="dash-form">
 
+                    <div class="dash-search">
+                        <input type="text" placeholder="Search">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
 
     </header>
 
     <div class="my-container">
-
-        <aside class="my-aside"></aside>
 
         <main class="my-container__content">
 
             <!-- TABS -->
             <nav class="tabs">
                 <ul>
-                    <li data-target="tab1" class="tabs__button active">
-                        <span>Informações Gerais</span>
+                    <li data-target="tab1" class="tab active">
+                        <span class="tab__icon">
+                            <i class="fas fa-chart-area"></i>
+                        </span>
+
+                        <span class="tab__label">Início</span>
+                        <span class="tab__text">Visualize suas ações</span>
                     </li>
 
-                    <li data-target="tab2"  class="tabs__button">
-                        <span> Atualizar Dados Pessoais  </span>        
+                    <li data-target="tab2"  class="tab">
+                        <span class="tab__icon">
+                            <i class="fas fa-address-card"></i>
+                        </span>
+    
+                        <span class="tab__label">Atualizações</span>
+                        <span class="tab__text">Dados Pessoais</span>     
                     </li>
 
-                    <li data-target="tab3"  class="tabs__button">
-                        <span>Atualizar Dados do Login </span>
+                    <li data-target="tab3"  class="tab">
+                        <span class="tab__icon">
+                            <i class="fas fa-key"></i>
+                        </span>
+    
+                        <span class="tab__label">Segurança</span>
+                        <span class="tab__text">Alterar dados login</span>     
+                    </li>
+
+                    <li  class="tab tab--disabled">
+       
                     </li>
                 </ul>
             </nav>
@@ -69,7 +99,7 @@
                         <span class="card__title">Orçamentos Enviados</span>
                     </div>
     
-                    <div class="card__bottom">
+                    <div class="card__content">
                         <table class="table">
                             <thead>
                                 <tr>
@@ -190,8 +220,8 @@
             
                 
                             <div class="data">
-                                <button class="btn btn--blue btn--md btn--outline">Salvar Alterações</button>
-                                <button class="btn btn--red btn--md btn--outline">Cancelar</button>
+                                <button class="dash-btn">Salvar Alterações</button>
+                                <button class="dash-btn">Cancelar</button>
                             </div>
                         
                         </form>
@@ -230,8 +260,8 @@
                                 
                 
                                 <div class="data">
-                                        <button class="btn btn--blue btn--md btn--outline">Salvar Alterações</button>
-                                        <button class="btn btn--red btn--md btn--outline">Cancelar</button>
+                                        <button class="dash-btn">Salvar Alterações</button>
+                                        <button class="dash-btn">Cancelar</button>
                                     </div>
                              
                             </form>

@@ -17,6 +17,7 @@ $card-spacing: 1.5rem;
     &__content {
         padding: $card-spacing;
         font-size: 1.92rem;
+        overflow: auto;
         font-weight: 400;
 
     }
